@@ -258,7 +258,7 @@ a:hover {
   background: var(--theme-color);
   padding: 20px 5px 150px;
 }
-.all-section{
+.all-section {
   padding: 40px 0;
 }
 .nav100 {
@@ -355,7 +355,7 @@ button.search-button i {
 .all-sec-mt {
   margin-top: -130px;
 }
-.padding-top-0{
+.padding-top-0 {
   padding-top: 0;
 }
 #digital-clock {
@@ -368,6 +368,8 @@ button.search-button i {
   border-radius: 20px;
   color: #fff;
   font-size: 30px;
+  position: relative;
+  z-index: 1;
 }
 .cart-home {
   background-color: #fff;
@@ -379,7 +381,7 @@ button.search-button i {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   margin-bottom: 20px;
 }
 .cart-home img {
@@ -408,11 +410,18 @@ div#digital-clock {
   align-items: center;
   font-weight: bold;
 }
-div#digital-clock span{
+div#digital-clock span {
   font-size: 15px;
 }
-.container-padding-LR{
+.container-padding-LR {
   padding: 0 60px;
+}
+
+div#digital-clock + img {
+  width: 176px;
+  position: absolute;
+  left: -72px;
+  top: -31px;
 }
 /*======================end section content home======================*/
 /****************************************************/
@@ -483,6 +492,16 @@ section.content-login h4 {
   }
   input.effect-11 {
     font-size: 12px;
+  }
+  /*=============home===================*/
+  .container-padding-LR {
+    padding: 0 15px;
+  }
+  .cart-home img {
+    width: 35px;
+  }
+  #digital-clock {
+    justify-content: unset;
   }
 }
 @media only screen and (max-width: 600px) {
