@@ -205,20 +205,12 @@ a:hover {
 .form-control:focus {
   box-shadow: unset;
 }
-.relative{
+.relative {
   position: relative;
 }
 
 /*=====button======*/
-
-
-
-
-
-
-
-
-.material-btn{
+.material-btn {
   position: relative;
   overflow: hidden;
   padding: 10px 25px;
@@ -231,45 +223,44 @@ a:hover {
   cursor: pointer;
 }
 
-.wave{
+.wave {
   position: absolute;
   top: 10px;
   left: 20px;
-  
+
   width: 5px;
   height: 5px;
-  
+
   border-radius: 100%;
   transform: scale(0);
-  background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.material-btn--active .wave{
+.material-btn--active .wave {
   animation: wave-animation 1.9s;
 }
 
-@keyframes wave-animation{
-  from{
+@keyframes wave-animation {
+  from {
     opacity: 1;
     transform: scale(0);
-  }to{
-    transform:scale(70);
+  }
+  to {
+    transform: scale(70);
     opacity: 0;
   }
 }
 
-
-
 /*====end button ====*/
-/*------------------------------------------------------------------
- -----------------navbar --------------------------/
-------------------------------------------------------------------*/
+/*===========header===========================*/
 
 .navigation {
   background: var(--theme-color);
-  padding: 20px 5px 130px;
+  padding: 20px 5px 150px;
 }
-
+.all-section{
+  padding: 40px 0;
+}
 .nav100 {
   height: 100vh;
 }
@@ -283,30 +274,22 @@ a.log-out span {
   margin-right: 5px;
 }
 
-
-
-.search__input {
-  width: 100%;
-  padding: 12px 24px;
-  background-color: transparent;
-  transition: transform 250ms ease-in-out;
-  font-size: 14px;
-  line-height: 18px;
-  color: #575756;
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
-  background-position: 95% center;
-  border-radius: 50px;
-  border: 1px solid #575756;
-  transition: all 250ms ease-in-out;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
+a.log-out img {
+  width: 15px;
 }
-
-.search__input::placeholder {
-  color: rgba(87, 87, 86, 0.8);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+.log-out-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.icon-flex a {
+  color: #fff;
 }
 
 .search__input:hover,
@@ -318,21 +301,24 @@ a.log-out span {
   background-position: 100% center;
 }
 .input-radius {
-  font:15px;
+  font: 15px;
   color: #333;
   width: 100%;
   box-sizing: border-box;
   border-radius: 5px;
-  
 }
-
+.relative.content-input {
+  border-radius: 5px;
+  background-color: #fff;
+}
 .effect-11 {
   border: 0;
-  padding: 7px 15px;
+  padding: 7px;
   border: 1px solid #ccc;
   position: relative;
   background: transparent;
   border-radius: 5px;
+  z-index: 1;
 }
 .effect-11 ~ .focus-bg {
   position: absolute;
@@ -342,15 +328,95 @@ a.log-out span {
   height: 100%;
   background-color: #ededed;
   transition: 0.3s;
-  z-index: -1;
+  z-index: 0;
+  border-radius: 5px;
 }
 .effect-11:focus ~ .focus-bg {
   transition: 0.3s;
   width: 100%;
 }
+
+.relative.content-input .search-button {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  z-index: 10;
+  cursor: pointer;
+  background-color: unset;
+}
+
+button.search-button i {
+  color: #a4a4a4;
+}
+.input-search {
+  padding-left: 18px;
+}
+/*====================== section content home====================*/
+.all-sec-mt {
+  margin-top: -130px;
+}
+.padding-top-0{
+  padding-top: 0;
+}
+#digital-clock {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 30px;
+}
+.cart-home {
+  background-color: #fff;
+  box-shadow: 0px 5px 15px #0a429114;
+  text-align: center;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all .4s ease-in-out;
+  margin-bottom: 20px;
+}
+.cart-home img {
+  margin-bottom: 10px;
+}
+p.morning {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+p.morning + p {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.cart-home p {
+  color: #0b4291;
+  font-weight: bold;
+}
+.cart-home:hover {
+  background-color: #f5f5f5;
+}
+div#digital-clock {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+div#digital-clock span{
+  font-size: 15px;
+}
+.container-padding-LR{
+  padding: 0 60px;
+}
+/*======================end section content home======================*/
+/****************************************************/
 /*****************login*******************************/
-
-
 
 .login-blue {
   background-color: var(--theme-color);
@@ -399,18 +465,31 @@ section.content-login h4 {
   .responsive-none {
     display: none;
   }
-  .content-login{
+  .content-login {
     background-image: url(../img/panel_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+  .col-md-4.log-out-flex {
+    margin-top: 15px;
+  }
+  .icon-flex span {
+    display: none;
+  }
+
+  a.log-out span {
+    display: none;
+  }
+  input.effect-11 {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 600px) {
-.login-flex-form form {
-  width: 80%;
-  margin: auto;
-}
+  .login-flex-form form {
+    width: 80%;
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 320px) {
   .img-sec1-none {

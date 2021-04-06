@@ -18,11 +18,20 @@
 
     <!-- end special -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .home-nav {
+            padding-bottom: 220px;
+        }
+
+        .all-sec-mt {
+            margin-top: -190px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- ------------nav bar------------------ -->
-    <section class="navigation">
+    <section class="navigation home-nav">
         <div class="nav-container">
             <div class="container-fluid">
                 <div class="row">
@@ -61,7 +70,66 @@
         </div>
     </section>
     <!-- content -->
+    <section class="all-section all-sec-mt home ">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <p class="morning"> <span>صباح الخير</span> , احمد</p>
+                    <p>إدارة نادي جزيرة الورد الرياضي تتمني لك يوم عمل لطيف</p>
+                </div>
+                <div class="col-4">
+                    <div id="digital-clock"></div>
+                    <!-- <img src="img/home/home vector.svg" alt=""> -->
+                </div>
+            </div>
+        </div>
 
+        <div class="container container-padding-LR">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#">
+                        <div class="cart-home">
+                            <img src="img/home/members.svg" alt="">
+                            <p>قائمة الاعضاء الحاليين</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="add-member.html">
+                        <div class="cart-home">
+                            <img src="img/home/addmember.svg" alt="">
+                            <p>  اضافة عضو جديد</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div class="cart-home">
+                            <img src="img/home/reports.svg" alt="">
+                            <p>استخراج التقارير</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div class="cart-home">
+                            <img src="img/home/financial.svg" alt="">
+                            <p> الامور المالية </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div class="cart-home">
+                            <img src="img/home/setting.svg" alt="">
+                            <p> الاعدادات</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
 
 
@@ -75,7 +143,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!-- special for this page -->
-
+    <script src="js/clock.js"></script>
     <!-- end special for this page -->
     <script src="js/js.js"></script>
 </body>
