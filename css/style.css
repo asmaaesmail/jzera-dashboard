@@ -24,11 +24,11 @@
   src: url("../fonts/fa-brands-400.eot");
 }
 
-@font-face {
+/* @font-face {
   font-family: Tajawal;
   src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
 }
-
+ */
 @font-face {
   font-family: Tajawal-Bold;
   src: url(../fonts/Tajawal/Tajawal-Bold.ttf);
@@ -45,7 +45,7 @@
 }
 
 @font-face {
-  font-family: Tajawal-Medium;
+  font-family: Tajawal;
   src: url(../fonts/Tajawal/Tajawal-Medium.ttf);
 }
 
@@ -115,6 +115,9 @@ body {
 :root {
   --theme-color: #0a4291;
 }
+.theme-color {
+  color: var(--theme-color);
+}
 a {
   text-decoration: none;
 }
@@ -137,6 +140,9 @@ a:hover {
 
 .bold {
   font-weight: bold;
+}
+.block {
+  display: block;
 }
 
 .flex {
@@ -455,6 +461,53 @@ div#digital-clock + img {
   top: -31px;
 }
 /*======================end section content home======================*/
+
+/* ================searh result =============================*/
+.flex-img-name p {
+  margin-bottom: 0;
+}
+.flex-img-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #000;
+}
+.flex-img-name img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.card-status {
+  display: flex;
+}
+.card-status div {
+  flex-grow: 1;
+}
+.personal-data-card {
+  box-shadow: 0px 2px 8px #0a429114;
+  border-radius: 18px;
+  background-color: #fff;
+  padding: 17px;
+  color: #000;
+  margin-bottom: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.personal-data-card:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 3px #0a429114;
+}
+.card-status-span div span:nth-child(1) {
+  color: #9d9d9d;
+  font-size: 13px;
+}
+.section-mt-130 {
+  margin-top: -130px;
+}
+.container-padding-LR-80 {
+  padding: 0 80px;
+}
+/*====================end search result =======================*/
 /****************************************************/
 /*****************login*******************************/
 
@@ -499,8 +552,16 @@ section.content-login h4 {
 @media (max-width: 1024px) {
 }
 @media only screen and (max-width: 991px) {
+  .container-padding-LR-80 {
+    padding: 0 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
+  /**********component***********/
+  .all-section {
+    padding: 20px 0;
+  }
+  /*********end component********/
   /*********login***************/
   .responsive-none {
     display: none;
@@ -511,9 +572,9 @@ section.content-login h4 {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .col-md-4.log-out-flex {
+  /*  .col-md-4.log-out-flex {
     margin-top: 15px;
-  }
+  } */
   .icon-flex span {
     display: none;
   }
@@ -534,6 +595,27 @@ section.content-login h4 {
   #digital-clock {
     justify-content: unset;
   }
+  .cart-home p {
+    font-size: 12px;
+  }
+  .cart-home {
+    margin-bottom: 15px;
+  }
+  /*==========end home=================*/
+  /*=====search result=======*/
+  .container-padding-LR-80 {
+    padding: 0 15px;
+  }
+  .personal-data-card {
+    margin-bottom: 15px;
+  }
+  .flex-img-name p {
+    font-size: 12px;
+  }
+  .flex-img-name p {
+    font-size: 12px;
+  }
+  /*=============end  search =============*/
 }
 @media only screen and (max-width: 600px) {
   .login-flex-form form {
