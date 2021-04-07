@@ -463,14 +463,23 @@ div#digital-clock + img {
 /*======================end section content home======================*/
 
 /* ================searh result =============================*/
-.flex-img-name p {
-  margin-bottom: 0;
-}
+
 .flex-img-name {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
   color: #000;
+  overflow-x: hidden;
+}
+.flex-img-name > div {
+  flex-grow: 1;
+}
+.flex-img-name p {
+  margin-bottom: 0;
+  white-space: nowrap;
+  width: calc(100% - 90px);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .flex-img-name img {
   width: 90px;
@@ -508,6 +517,76 @@ div#digital-clock + img {
   padding: 0 80px;
 }
 /*====================end search result =======================*/
+
+/*======================member html============*/
+.section-content-header {
+  color: #fff;
+  font-weight: bold;
+}
+
+.section-content-header span {
+  font-size: 16px;
+  margin-top: 5px;
+}
+.section-content-header img {
+  width: 35px;
+}
+.form-content-search {
+  width: 60%;
+  margin: auto;
+}
+table.table td {
+  border: 0;
+}
+.td-name a {
+  color: #000;
+  font-weight: bold;
+}
+td.td-position {
+  color: #b1b1b1;
+}
+.form-content-search button.material-btn {
+  padding: 5px;
+  width: 65px;
+  font-weight: bold;
+}
+
+.form-content-search input {
+  width: calc(100% - 103px);
+}
+.form-content-search i {
+  margin-right: 5px;
+  color: #a4a4a4;
+}
+.content-table-member {
+  box-shadow: 0px 2px 8px #0a429114;
+  border-radius: 0 0 13px 13px;
+  padding: 10px 5px;
+}
+.content-table-member {
+  box-shadow: 0px 2px 8px #0a429114;
+  border-radius: 0 0 13px 13px;
+  padding: 10px 5px;
+  padding-top: 36px;
+  background-color: #fff;
+}
+.form-content-search {
+  padding-top: 52px;
+  position: relative;
+}
+.form-content-search form {
+  box-shadow: 0px 2px 8px #0a429114;
+  background-color: #fff;
+  padding: 10px 5px;
+  border-radius: 10px;
+  position: absolute;
+  /* left: 0; */
+  width: 100%;
+  top: 26px;
+}
+.content-table-member {
+}
+/*===================end member html =======*/
 /****************************************************/
 /*****************login*******************************/
 
@@ -539,6 +618,9 @@ section.content-login h4 {
 .login-flex-form label {
   font-size: 12px;
   color: #6b6b6b;
+}
+.section-mt-150{
+  margin-top: -150px;
 }
 /*******************end login*****************************/
 /***************responsive******************************/
@@ -601,6 +683,7 @@ section.content-login h4 {
   .cart-home {
     margin-bottom: 15px;
   }
+
   /*==========end home=================*/
   /*=====search result=======*/
   .container-padding-LR-80 {
@@ -616,6 +699,24 @@ section.content-login h4 {
     font-size: 12px;
   }
   /*=============end  search =============*/
+  /*=================== member html =======*/
+  .form-content-search {
+    width: 100%;
+  }
+  .form-content-search .table td,
+  .form-content-search .table th {
+    padding: 0.7rem 0.3rem;
+    font-size: 12px;
+  }
+  .section-content-header span {
+    font-size: 14px;
+    margin-top: 3px;
+  }
+
+  .section-content-header img {
+    width: 25px;
+  }
+  /*===================end member html =======*/
 }
 @media only screen and (max-width: 600px) {
   .login-flex-form form {

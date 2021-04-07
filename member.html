@@ -19,17 +19,15 @@
 
     <!-- end special -->
     <link rel="stylesheet" href="css/style.css">
-     <!-- special for this page -->
+    <!-- special css -->
     <style>
-        .home-nav {
-            padding-bottom: 220px;
-        }
-
-        .all-sec-mt {
-            margin-top: -190px;
+        .navigation {
+            background: var(--theme-color);
+            padding: 20px 5px 180px;
         }
     </style>
-     <!-- end special -->
+    <!-- end special css -->
+
 </head>
 
 <body>
@@ -40,14 +38,14 @@
     </div>
     <!-- /////////////////////||||||||||||||||||||||||||||| End loadder |||||||||||||||||||||||||||| -->
     <!-- ------------nav bar------------------ -->
-    <section class="navigation home-nav">
+    <section class="navigation">
         <div class="nav-container">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8 col-10">
                         <div class="row ">
                             <div class="col-md-4 col-2 icon-flex">
-                                <a href="#">
+                                <a href="home.html">
                                     <img src="img/icon/back.svg" alt="">
                                 </a>
                                 <span>الاعضاء</span>
@@ -79,63 +77,38 @@
         </div>
     </section>
     <!-- content -->
-    <section class="all-section all-sec-mt home ">
-        <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <p class="morning"> <span>صباح الخير</span> , احمد</p>
-                    <p>إدارة نادي جزيرة الورد الرياضي تتمني لك يوم عمل لطيف</p>
-                </div>
-                <div class="col-4">
-                    <div id="digital-clock"></div>
-                    <img src="img/home/home vector.svg" alt="">
-                </div>
+    <!-- content -->
+    <section class="all-section section-mt-150">
+        <div class="container container-padding-LR-80">
+            <div class="section-content-header">
+                <img src="img/icon/addmember2.svg" alt="">
+                <span class="block">اضافة عضو جديد</span>
             </div>
-        </div>
-
-        <div class="container container-padding-LR">
-            <div class="row">
-                <div class="col-md-6 col-6">
-                    <a href="member.html">
-                        <div class="cart-home">
-                            <img src="img/home/members.svg" alt="">
-                            <p>قائمة الاعضاء الحاليين</p>
-                        </div>
-                    </a>
+            <div class="form-content-search">
+                <form action="searchResult.html">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="" id="">
+                    <button class="material-btn">
+                        <span class="wave"></span>
+                        بحث
+                    </button>
+                </form>
+                <div class="content-table-member">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="td-name bold">طارق احمد محمد عبد الهادي</td>
+                                <td class="td-position bold">عضو عامل</td>
+                                <td class="td-number bold">35010</td>
+                            </tr>
+                            <tr>
+                                <td class="td-name bold">طارق احمد محمد عبد الهادي</td>
+                                <td class="td-position bold">عضو عامل</td>
+                                <td class="td-number bold">35010</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="col-md-6 col-6">
-                    <a href="add-member.html">
-                        <div class="cart-home">
-                            <img src="img/home/addmember.svg" alt="">
-                            <p> اضافة عضو جديد</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-6">
-                    <a href="report.html">
-                        <div class="cart-home">
-                            <img src="img/home/reports.svg" alt="">
-                            <p>استخراج التقارير</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-6">
-                    <a href="#">
-                        <div class="cart-home">
-                            <img src="img/home/financial.svg" alt="">
-                            <p> الامور المالية </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-6">
-                    <a href="#">
-                        <div class="cart-home">
-                            <img src="img/home/setting.svg" alt="">
-                            <p> الاعدادات</p>
-                        </div>
-                    </a>
-                </div>
-
             </div>
         </div>
     </section>
@@ -152,7 +125,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!-- special for this page -->
-    <script src="js/clock.js"></script>
+
     <!-- end special for this page -->
     <script src="js/js.js"></script>
 </body>
