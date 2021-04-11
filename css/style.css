@@ -48,7 +48,9 @@
   font-family: Tajawal;
   src: url(../fonts/Tajawal/Tajawal-Medium.ttf);
 }
-
+:root {
+  --theme-color: #0a4291;
+}
 .body-over {
   overflow-y: hidden !important;
 }
@@ -63,18 +65,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #489bff;
+  background-color: var(--theme-color);
   outline: 1px solid #fff;
   border-radius: 0px;
 }
 
 ::-moz-selection {
-  background: #489bff;
+  background: var(--theme-color);
   color: #fff;
 }
 
 ::selection {
-  background: #489bff;
+  background: var(--theme-color);
   color: #fff;
 }
 
@@ -214,7 +216,9 @@ a:hover {
 .relative {
   position: relative;
 }
-
+.mb20 {
+  margin-bottom: 20px;
+}
 /*=====button======*/
 .material-btn {
   position: relative;
@@ -295,6 +299,7 @@ a:hover {
   background: var(--theme-color);
   padding: 20px 5px 150px;
 }
+
 .all-section {
   padding: 40px 0;
 }
@@ -345,7 +350,7 @@ a.log-out img {
   border-radius: 5px;
 }
 .relative.content-input {
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: #fff;
 }
 .effect-11 {
@@ -354,8 +359,9 @@ a.log-out img {
   border: 1px solid #ccc;
   position: relative;
   background: transparent;
-  border-radius: 5px;
+  border-radius: 7px;
   z-index: 1;
+  transition: all 0.4s ease-in-out;
 }
 .effect-11 ~ .focus-bg {
   position: absolute;
@@ -366,13 +372,15 @@ a.log-out img {
   background-color: #ededed;
   transition: 0.3s;
   z-index: 0;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 .effect-11:focus ~ .focus-bg {
   transition: 0.3s;
   width: 100%;
 }
-
+.effect-11:focus {
+  border-color: var(--theme-color);
+}
 .relative.content-input .search-button {
   position: absolute;
   left: 5px;
@@ -395,6 +403,13 @@ button.search-button i {
 .padding-top-0 {
   padding-top: 0;
 }
+.home-nav {
+  padding-bottom: 300px;
+}
+
+.sec-mt-home {
+  margin-top: -228px;
+}
 #digital-clock {
   display: flex;
   text-align: center;
@@ -412,7 +427,7 @@ button.search-button i {
   background-color: #fff;
   box-shadow: 0px 5px 15px #0a429114;
   text-align: center;
-  height: 110px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -421,8 +436,16 @@ button.search-button i {
   transition: all 0.4s ease-in-out;
   margin-bottom: 20px;
 }
+.cart-home p {
+  margin-bottom: 0;
+}
 .cart-home img {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  width: 36px;
+  object-fit: contain;
+}
+.mb-title-home {
+  margin-bottom: 45px;
 }
 p.morning {
   color: #fff;
@@ -455,10 +478,10 @@ div#digital-clock span {
 }
 
 div#digital-clock + img {
-  width: 176px;
+  width: 233px;
   position: absolute;
-  left: -72px;
-  top: -31px;
+  left: -76px;
+  top: -65px;
 }
 /*======================end section content home======================*/
 
@@ -473,6 +496,11 @@ div#digital-clock + img {
 }
 .flex-img-name > div {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  padding: 2px 0;
 }
 .flex-img-name p {
   margin-bottom: 0;
@@ -482,9 +510,9 @@ div#digital-clock + img {
   text-overflow: ellipsis;
 }
 .flex-img-name img {
-  width: 90px;
-  height: 90px;
-  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  border-radius: 18px;
   margin-left: 10px;
 }
 .card-status {
@@ -522,6 +550,7 @@ div#digital-clock + img {
 .section-content-header {
   color: #fff;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .section-content-header span {
@@ -619,10 +648,248 @@ section.content-login h4 {
   font-size: 12px;
   color: #6b6b6b;
 }
-.section-mt-150{
-  margin-top: -150px;
+.section-mt-170 {
+  margin-top: -170px;
 }
 /*******************end login*****************************/
+/*====================add member=====================*/
+
+/*** Start Profile Image */
+.profile-pic {
+  width: 125px;
+  height: 125px;
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow:  0px 2px 8px #0A429114;;
+}
+.profile1 .images-upload-block {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 115px;
+  height: 115px;
+  line-height: 115px;
+  border-radius: 14px;
+  background-color: #fff;
+  border:1px dashed #707070;
+  background-color: #f5f5f5;
+}
+.profile-edit .upload-img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  text-align: center;
+  position: relative;
+  margin: 0 0;
+  /* background-image: url(../img/pic.jpg); */
+  background-size: cover;
+}
+
+.profile-edit .upload-img:before {
+  content: "";
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  right: 0;
+}
+
+.profile-edit .upload-img span {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 9;
+  top: 50%;
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+  font-size: 22px;
+}
+
+.profile-edit .upload-img span i {
+  color: #e4e4e4;
+}
+
+.profile-edit .upload-img .content-camera {
+  font-size: 20px;
+  background-color: #A4A4A4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+}
+.content-camera img {
+  width: 15px;
+}
+.profile-edit .upload-img input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  display: none;
+}
+
+.profile-edit .uploaded-block {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  border-radius: 14px;
+  z-index: 9;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 14px 1px rgba(193, 191, 191, 1);
+  box-shadow: 0px 0px 14px 1px rgba(193, 191, 191, 1);
+}
+
+.profile-edit .uploaded-block img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 14px;
+}
+
+.profile-edit .uploaded-block .close {
+  position: absolute;
+  bottom: -7px;
+  color: #000 !important;
+  background: #ffffff !important;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 1;
+  left: -7px;
+  margin: auto;
+  padding: 0;
+  cursor: pointer;
+  text-shadow: none;
+  font-size: 25px;
+  width: 25px;
+  -webkit-box-shadow: 0px 0px 3px #232323;
+  box-shadow: 0px 0px 3px #232323;
+}
+
+.profile-edit .uploaded-block .close i {
+  font-size: 25px;
+}
+
+.imgprofile {
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  margin-bottom: 23px;
+  box-shadow: 3px 3px 3px #929292;
+}
+/****end image*********/
+.card-inputs label {
+  font-size: 12px;
+  color: #6b6b6b;
+  margin-bottom: 3px;
+}
+.card-inputs {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 19px;
+  box-shadow: 0px 2px 8px #0a429114;
+  margin-bottom: 30px;
+}
+.select2-container--default .select2-selection--single {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 7px;
+}
+.select2-container--default {
+  color: #444;
+  line-height: 38px;
+}
+span.select2.select2-container {
+  width: 100% !important;
+  height: 38px !important;
+}
+.select2-container {
+  width: 100% !important;
+}
+input.select2-search__field {
+  height: 30px;
+  border-radius: 4px;
+  border-color: #f5f5f5;
+}
+.select2-results__options li {
+  line-height: 22px;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  height: 100%;
+  line-height: 38px;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  left: 1px;
+  height: 100%;
+}
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #f5f5f5;
+  color: #0c62da;
+}
+.select2-dropdown {
+  border: 1px solid #f1f1f1;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 20px;
+  padding-right: 8px;
+}
+.contnet-inputs-no-borader .relative.content-input {
+  border-radius: 7px;
+  background-color: #f5f5f5;
+}
+.contnet-inputs-no-borader .effect-11 {
+  border: 1px solid #f5f5f5;
+}
+
+.contnet-inputs-no-borader .effect-11:focus {
+  border-color: var(--theme-color);
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #f1f1f1;
+}
+p.title-card {
+  color: #9D9D9D;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.add-member-sec{
+  background-image: url('../img/image-back/addvector.svg');
+  background-position: bottom left;
+}
+.add-member-sec {
+  background-image: url(../img/image-back/addvector.svg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 24%;
+}
+/*==========end add member ================*/
 /***************responsive******************************/
 /* Media Screen */
 @media (max-width: 1450px) {
@@ -667,12 +934,45 @@ section.content-login h4 {
   input.effect-11 {
     font-size: 12px;
   }
+  input.input-radius.effect-11:focus {
+    border-color: var(--theme-color);
+  }
   /*=============home===================*/
   .container-padding-LR {
     padding: 0 15px;
   }
+  .edit-col6-padding .col-6 {
+    padding: 0 5px;
+  }
+  p.morning {
+    font-size: 16px;
+  }
+  p.morning + p {
+    font-size: 12px;
+  }
+  #digital-clock{
+    font-size: 24px;
+  }
+  .sec-mt-home {
+    margin-top: -155px;
+  }
+  .mb-title-home {
+    margin-bottom: 10px;
+  }
+  .home-nav {
+    padding-bottom: 200px;
+  }
+  div#digital-clock + img {
+    width: 140px;
+    left: -28px;
+    top: -42px;
+  }
   .cart-home img {
-    width: 35px;
+    width: 28px;
+    margin-bottom: 5px;
+  }
+  .cart-home {
+    height: 80px;
   }
   #digital-clock {
     justify-content: unset;
@@ -717,6 +1017,42 @@ section.content-login h4 {
     width: 25px;
   }
   /*===================end member html =======*/
+  /*=================add member html=============*/
+  .add-member-sec {
+    background-size: 54%;
+  }
+  .profile-pic{
+    margin: auto;
+  }
+  /*responsive upload image */
+  .profile1 .images-upload-block {
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    border-radius: 12px;
+   
+}
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 13px;
+}
+.content-camera img {
+  width: 14px;
+}
+.profile-edit .upload-img .content-camera{
+  width: 27px;
+    height: 27px;
+    top: 28px;
+}
+.section-mt-170 {
+  margin-top: -140px;
+}
+.navigation-member{
+  
+}
+  /* end upload image */
+  /*============end add member html===================*/
 }
 @media only screen and (max-width: 600px) {
   .login-flex-form form {
