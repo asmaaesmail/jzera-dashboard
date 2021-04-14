@@ -1037,6 +1037,9 @@ span.attend.block {
 .title-size-edit {
   font-size: 19px;
 }
+.member-details-sec{
+  background-image: unset;
+}
 /*============endmember details =================*/
 /***************responsive******************************/
 /* Media Screen */
@@ -1307,6 +1310,9 @@ span.attend.block {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.member-details-sec{
+  padding-bottom:80px ;
 }
   /*============ end member details html===================*/
 }
