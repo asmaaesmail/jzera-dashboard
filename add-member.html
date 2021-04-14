@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="fonts/font-awsome/css/all.min.css">
 
     <!-- animate -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- special for this page -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <!-- end special -->
     <link rel="stylesheet" href="css/style.css">
     <!-- special css -->
-  
+
     <!-- end special css -->
 
 </head>
@@ -70,7 +70,7 @@
     </section>
     <!-- content -->
     <section class="all-section add-member-sec section-mt-170">
-        <div class="container ">
+        <div class="container">
             <div class=" offset-md-2 section-content-header">
                 <img src="img/icon/addmember2.svg" alt="">
                 <span class="block">اضافة عضو جديد</span>
@@ -88,9 +88,9 @@
                                                     style="background-image: url(img/pic.jpg)">
                                                     <input type="file" accept="image/*" name="avatar" id="avatar"
                                                         class="image-uploader form-control">
-                                                        <div class="content-camera">
-                                                            <img src="img/icon/camera.png" alt="">
-                                                        </div>
+                                                    <div class="content-camera">
+                                                        <img src="img/icon/camera.png" alt="">
+                                                    </div>
                                                     <!-- <i class="fa fa-plus"></i> -->
                                                 </label>
                                                 <small class="form-text text-danger" id="avatar_error"></small>
@@ -101,265 +101,309 @@
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">رقم العضوية</label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="number">
-                                                <span class="focus-bg"></span>
+                            <div class="wow  animate__animated animate__fadeInUp">
+                                <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">رقم العضوية</label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="number">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">نوع العضوية </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">نوع العضوية </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">الفئة </label>
-                                            <select class="js-select2">
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">الفئة </label>
+                                                <select class="js-select2">
 
-                                                <option>عادية</option>
-                                                <option>شباب ورياضة</option>
-                                                <option>شرطة - قوات مسلحة - قضاء</option>
-                                                <option>شرفي</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">حالة العضوية </label>
-                                            <select class="js-select2">
-                                                <option>سارية</option>
-                                                <option>مسقطة</option>
-                                                <option>شباب ورياضة</option>
-                                                <option>شرطة - قوات مسلحة - قضاء</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">الاسم </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                                                    <option>عادية</option>
+                                                    <option>شباب ورياضة</option>
+                                                    <option>شرطة - قوات مسلحة - قضاء</option>
+                                                    <option>شرفي</option>
+                                                </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">اللقب </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">حالة العضوية </label>
+                                                <select class="js-select2">
+                                                    <option>سارية</option>
+                                                    <option>مسقطة</option>
+                                                    <option>شباب ورياضة</option>
+                                                    <option>شرطة - قوات مسلحة - قضاء</option>
+                                                </select>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="title-card"> بيانات شخصية</p>
-                            <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">رقم الهاتف</label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="number">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">الاسم </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> العنوان </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">رقم البطاقة</label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="number">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">سجل مدني </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="number">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> المؤهل </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> الوظيفة </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">اللقب </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <p class="title-card"> بيانات  اضافية</p>
-                            <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> الحالة الاجتماعية </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                            <div class="wow  animate__animated animate__fadeInUp">
+                                <p class="title-card"> بيانات شخصية</p>
+                                <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">رقم الهاتف</label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="number">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> الجنسية </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> العنوان </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> تاريخ الميلاد</label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="date">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">رقم البطاقة</label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="number">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">محل الميلاد  </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">سجل مدني </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="number">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> النوع </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> المؤهل </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> الديانة </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="text">
-                                                <span class="focus-bg"></span>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> الوظيفة </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="wow  animate__animated animate__fadeInUp">
+                                <p class="title-card"> بيانات اضافية</p>
+                                <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> الحالة الاجتماعية </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> الجنسية </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> تاريخ الميلاد</label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="date">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">محل الميلاد </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> النوع </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> الديانة </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="text">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wow  animate__animated animate__fadeInUp">
+
+                                <p class="title-card"> بيانات الدفع والتأكيد</p>
+                                <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> رقم ايصال الدفع </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="number">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> صورة ايصال الدفع </label>
+                                               
+                                                <div class="input-group relative content-input input-file" >
+                                                    <span class="input-group-btn">
+                                                        <img src="img/icon/photo-camera.svg" class="btn-choose">
+                                                    </span>
+                                                    <input type="text" class="input-radius effect-11 " />
+                                                        <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> رقم الموافقة</label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="number">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1">تاريخ الموافقة </label>
+                                                <div class="relative content-input">
+                                                    <input class="input-radius effect-11 " type="date">
+                                                    <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wow  animate__animated animate__fadeInUp">
+                                <p class="title-card"> المستندات المرفقة </p>
+                                <div class="card-inputs  edit-col6-padding contnet-inputs-no-borader">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> صورة بطاقة القم القومي </label>
+                                               
+                                                <div class="input-group relative content-input input-file" >
+                                                    <span class="input-group-btn">
+                                                        <img src="img/icon/photo-camera.svg" class="btn-choose">
+                                                    </span>
+                                                    <input type="text" class="input-radius effect-11 " />
+                                                        <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group ">
+                                                <label for="exampleInputEmail1"> مستندات اخري </label>
+                                               
+                                                <div class="input-group relative content-input input-file" >
+                                                    <span class="input-group-btn">
+                                                        <img src="img/icon/photo-camera.svg" class="btn-choose">
+                                                    </span>
+                                                    <input type="text" class="input-radius effect-11 " />
+                                                        <span class="focus-bg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt20 content-btns">
+                                <button type="button" class="material-btn" data-toggle="modal"
+                                    data-target="#modal-addMember">
+                                    <span class="wave"></span>
+                                    حفظ
+                                </button>
+                                <button class="material-btn btn-not-color">
+                                    <span class="wave"></span>
+                                    الغاء
+                                </button>
                             </div>
 
-                            <p class="title-card"> بيانات  الدفع والتأكيد</p>
-                            <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">  رقم ايصال الدفع </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="number">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> صورة ايصال الدفع </label>
-                                           <!--  <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="file">
-                                                <span class="focus-bg"></span>
-                                            </div> -->
-                                            <div class="input-group input-file" name="Fichier1">
-                                                <span class="input-group-btn">
-                                                <button class="btn btn-default btn-choose" type="button">صورة </button>
-                                                </span>
-                                                <input type="text" class="form-control" placeholder='رفع صورة للكتاب' />
-                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">  رقم الموافقة</label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="number">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">تاريخ الموافقة   </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="date">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="title-card"> المستندات المرفقة </p>
-                            <div class="card-inputs  edit-col6-padding contnet-inputs-no-borader">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1">   صورة بطاقة الرقم القومي</label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="file">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group ">
-                                            <label for="exampleInputEmail1"> مستندات اخري   </label>
-                                            <div class="relative content-input">
-                                                <input class="input-radius effect-11 " type="file">
-                                                <span class="focus-bg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
+                </form>
             </div>
         </div>
     </section>
+    <!-- -------------- modallll ------------------ -->
 
+
+    <!-- Modal -->
+    <div class="modal modal-succsess-add-member fade" id="modal-addMember" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                <img src="img/icon/addSuccess.png" class="wow  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">تم اضافة العضو بنجاح</p>
+                    <p class="size14">جاري طباعة كارنيه العضوية . برجاء الانتظار </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- end  modallll ------------------ -->
 
     <!-- --------loader--------- -->
 
@@ -369,19 +413,18 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <!-- special for this page -->
+    <!-- -------special for this page--------- -->
     <script src='js/uploadimg.js'> </script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
         $(document).ready(function () {
-
             $(".js-select2").select2();
-
-
 
         });
     </script>
-    <!-- end special for this page -->
+    <script src="js/button.js"></script>
+    <script src="js/upload-fle.js"> </script>
+    <!-- -------end special for this page---------- -->
     <script src="js/js.js"></script>
 </body>
 

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="theme-color" content="#0a4291;" />
+    <title> نادي جزيرة الورد || اضافة عضو جديد </title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="fonts/font-awsome/css/all.min.css">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- special for this page -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- end special -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- special css -->
+
+    <!-- end special css -->
+
+</head>
+
+<body>
+    <!-- /////////////////////|||||||||||||||||||||||||||||  loadder |||||||||||||||||||||||||||| -->
+    <div id="loader-wrapper">
+        <div class="spinner">
+        </div>
+    </div>
+    <!-- /////////////////////||||||||||||||||||||||||||||| End loadder |||||||||||||||||||||||||||| -->
+    <!-- ------------nav bar------------------ -->
+    <section class="navigation navigation-member">
+        <div class="nav-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 col-1 icon-flex">
+                        <a href="home.html">
+                            <img src="img/icon/back.svg" alt="">
+                        </a>
+                        <span>الاعضاء</span>
+                    </div>
+                    <div class="col-md-6 col-9">
+                        <form action="">
+                            <div class=" ">
+                                <div class="relative content-input">
+                                    <input class="input-radius effect-11 input-search" type="text"
+                                        placeholder="ابحث عن العضو بالاسم او رقم العضوية">
+                                    <span class="focus-bg"></span>
+                                    <button class="search-button"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-1 log-out-flex">
+                        <a class="log-out" href="login.html">
+                            <img src="img/icon/logout.svg" alt="">
+                            <span>تسجيل خروج</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content -->
+    <section class="all-section add-member-sec section-mt-170">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-2 relative">
+                    <div class="sidebar animate__animated animate__slideInRight">
+                        <ul>
+                            <li class="nav-active">
+                                <a href="member-details.html">
+                                    <!-- if not active use this img -->
+                                    <!-- <img src="img/member edit/VIEW.svg" alt=""> -->
+                                    <!-- if it is active use this img -->
+                                    <img src="img/member edit/VIEW1.svg" alt="">
+                                    عرض
+                                </a>
+                            </li>
+                            <li>
+                                <a href="follower-member.html">
+                                    <!-- if not active use this img -->
+                                    <img src="img/member edit/edit.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/member edit/edit1.svg" alt=""> -->
+                                    تعديل
+                                </a>
+                            </li>
+                            <li>
+                                <a href="edit-member.html">
+                                    <!-- if not active use this img -->
+                                    <img src="img/member edit/followers.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/member edit/followers1.svg" alt=""> -->
+                                    التابعين
+                                </a>
+                            </li>
+                            <li>
+                                <a href="edit-member.html">
+                                    <!-- if not active use this img -->
+                                    <img src="img/member edit/renew.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/member edit/renew1.svg" alt=""> -->
+
+                                    تجديد
+                                </a>
+                            </li>
+                            <li>
+                                <a href="edit-member.html">
+                                    <!-- if not active use this img -->
+                                    <img src="img/member edit/id.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/member edit/id1.svg" alt=""> -->
+                                    كارنيه
+                                </a>
+                            </li>
+                            <li>
+                                <a href="edit-member.html">
+                                    <!-- if not active use this img -->
+                                    <img src="img/member edit/report.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/member edit/report1.svg" alt=""> -->
+                                    تقرير
+                                </a>
+                            </li>
+                            <li>
+                                <a href="edit-member.html">
+                                    <!-- if not active use this img -->
+                                    <img src="img/member edit/archive.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/member edit/archive1.svg" alt=""> -->
+                                    ارشيف
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <form class="form " action="profile.html">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="personal-data-card">
+                                    <div class="flex-img-name">
+                                        <img src="img/people/1.jpg" alt="">
+                                        <div>
+                                            <span class="theme-color bold title-size-edit">56545</span>
+                                            <p class="bold name-card title-size-edit">احمد محمد طارق احمد   
+                                               
+                                            </p>
+                                            <p class=" name-card ">رئيس مجلس الادارة</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-status card-status-span">
+                                        <div>
+                                            <span class="block">نوع العضوية</span>
+                                            <span class="block">عضو عامل</span>
+                                        </div>
+                                        <div>
+                                            <span class="block">الفئة</span>
+                                            <span class="block"> عادية</span>
+                                        </div>
+                                        <div>
+                                            <span class="block">حالة العضوية</span>
+                                            <span class="block">سارية</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wow  animate__animated animate__fadeInUp">
+                                    <p class="title-card"> بيانات شخصية</p>
+                                    <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-col-10">
+                                                <span class="block gray"> رقم الهاتف : </span>
+                                                <span class="block">01098765432</span>
+                                            </div>
+                                            <div class="col-md-6 mb-col-10">
+                                                <span class="block gray">العنوان : </span>
+                                                <span class="block">توريل - شارع بوتاري - تقاطع مختار المصري</span>
+                                            </div>
+                                            <div class="col-md-6 mb-col-10">
+                                                <span class="block gray">رقم البطاقة : </span>
+                                                <span class="block">01098765432</span>
+                                            </div>
+                                            <div class="col-md-6 mb-col-10">
+                                                <span class="block gray">سجل مدني : </span>
+                                                <span class="block">توريل - شارع بوتاري - تقاطع مختار المصري</span>
+                                            </div>
+                                            <div class="col-md-6 mb-col-10">
+                                                <span class="block gray"> المؤهل : </span>
+                                                <span class="block">01098765432</span>
+                                            </div>
+                                            <div class="col-md-6 mb-col-10">
+                                                <span class="block gray">الوظيفة : </span>
+                                                <span class="block">توريل - شارع بوتاري - تقاطع مختار المصري</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wow  animate__animated animate__fadeInUp">
+                                    <p class="title-card"> بيانات اضافية</p>
+                                    <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                        <div class="row">
+                                            <div class="col-md-6 col-6 mb-col-10">
+                                                <span class="block gray"> الحالة الاجتماعية : </span>
+                                                <span class="block">متزوج </span>
+                                            </div>
+                                            <div class="col-md-6 col-6 mb-col-10">
+                                                <span class="block gray">الجنسية : </span>
+                                                <span class="block">مصري</span>
+                                            </div>
+                                            <div class="col-md-6 col-6 mb-col-10">
+                                                <span class="block gray">تاريخ الميلاد : </span>
+                                                <span class="block">23 - 07 - 1964</span>
+                                            </div>
+                                            <div class="col-md-6 col-6 mb-col-10">
+                                                <span class="block gray">محل الميلاد : </span>
+                                                <span class="block">المنصورة- الدقهلية</span>
+                                            </div>
+                                            <div class="col-md-6 col-6 mb-col-10">
+                                                <span class="block gray"> المؤهل : </span>
+                                                <span class="block">مؤهل عالي</span>
+                                            </div>
+                                            <div class="col-md-6 col-6 mb-col-10">
+                                                <span class="block gray">الوظيفة : </span>
+                                                <span class="block"> محاسب </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wow  animate__animated animate__fadeInUp">
+                                    <p class="title-card"> الاعضاء التابعين </p>
+                                    <div class="personal-data-card">
+                                        <div class="flex-img-name">
+                                            <img src="img/people/1.jpg" alt="">
+                                            <div>
+                                                <p class="bold name-card title-size-edit"> احمد محمد طارق احمد محمد طارق
+                                                </p>
+                                                <p class=" name-card">رئيس مجلس الادارة</p>
+                                                <span class="theme-color bold title-size-edit">56545</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-status card-status-span">
+                                            <div>
+                                                <span class="block">تاريخ الميلاد </span>
+                                                <span class="block">08 - 03 - 2005</span>
+                                            </div>
+                                            <div>
+                                                <span class="block">نوع التبعية : </span>
+                                                <span class="block"> انثي</span>
+                                            </div>
+                                            <div>
+                                                <span class="block">النوع : </span>
+                                                <span class="block">انثي</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="profile-details-notes">
+                                    <span class="block bold greay important-notes">ملاحظات هامة</span>
+                                    <span class="block greay">اخر معاد تم التجديد</span>
+                                    <span class="block dateRed">30 - 05 - 2020</span>
+                                    <span class="block greay">الجمعية العمومية</span>
+                                    <span class="attend block">تم الحضور</span>
+                                    <span class="block greay">المستحقات المالية</span>
+                                    <span class="block"><span class="bold">80</span><span>ج</span></span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------- modallll ------------------ -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- end  modallll ------------------ -->
+
+    <!-- --------loader--------- -->
+
+    <!-- --------top--------- -->
+
+    <!-- scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- -------special for this page--------- -->
+    <script src='js/uploadimg.js'> </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".js-select2").select2();
+
+        });
+    </script>
+    <script src="js/button.js"></script>
+    <script src="js/upload-fle.js"> </script>
+    <!-- -------end special for this page---------- -->
+    <script src="js/js.js"></script>
+</body>
+
+</html>
