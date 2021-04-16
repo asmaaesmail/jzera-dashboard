@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="theme-color" content="#0a4291;" />
+    <title> نادي جزيرة الورد || اضافة عضو جديد </title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="fonts/font-awsome/css/all.min.css">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- special for this page -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- end special -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- special css -->
+
+    <!-- end special css -->
+
+</head>
+
+<body>
+    <!-- /////////////////////|||||||||||||||||||||||||||||  loadder |||||||||||||||||||||||||||| -->
+    <div id="loader-wrapper">
+        <div class="spinner">
+        </div>
+    </div>
+    <!-- /////////////////////||||||||||||||||||||||||||||| End loadder |||||||||||||||||||||||||||| -->
+    <!-- ------------nav bar------------------ -->
+    <section class="navigation navigation-member">
+        <div class="nav-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-1 icon-flex">
+                        <a href="home.html">
+                            <img src="img/icon/back.svg" alt="">
+                        </a>
+                        <span>الاعضاء</span>
+                    </div>
+                    <div class="col-md-6 col-9">
+                        <form action="">
+                            <div class=" ">
+                                <div class="relative content-input">
+                                    <input class="input-radius effect-11 input-search" type="text"
+                                        placeholder="ابحث عن العضو بالاسم او رقم العضوية">
+                                    <span class="focus-bg"></span>
+                                    <button class="search-button"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-1 log-out-flex">
+                        <a class="log-out" href="login.html">
+                            <img src="img/icon/logout.svg" alt="">
+                            <span>تسجيل خروج</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content -->
+    <section class="all-section  section-mt-170">
+        <div class="container ">
+            <div class="row">
+
+                <div class="offset-md-2 col-md-10">
+                    <div class=" section-content-header">
+                        <img src="img/icon/reports2.svg" alt="">
+                        <span class="block">استخراج التقارير </span>
+                    </div>
+                    <form class="form " action="profile.html">
+                        <div class="row">
+
+                            <div class="col-md-11">
+                                <div class="">
+                                    <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                        <p class="title-card"> اختر البيانات المعروضة في التقرير </p>
+                                        <div class="flex-details-report">
+                                            <div class="wrapper d-flex">
+                                                <div class=" custom-checkbox iconSelect ">
+                                                    <input type="checkbox" id="customCheck1" name="customCheck"
+                                                        value="1" class="custom-control-input">
+                                                    <label class="custom-control-label1" for="customCheck1">
+                                                        <div class="mt-1">رقم العضوية</div>
+                                                    </label>
+                                                </div>
+                                                <div class=" custom-checkbox iconSelect">
+                                                    <input type="checkbox" id="customCheck2" name="customCheck"
+                                                        value="2" class="custom-control-input" checked>
+                                                    <label class="custom-control-label1" for="customCheck2">
+
+                                                        <div class="mt-1">الاسم</div>
+                                                    </label>
+                                                </div>
+                                                <div class=" custom-checkbox iconSelect">
+                                                    <input type="checkbox" id="customCheck3" name="customCheck"
+                                                        value="2" class="custom-control-input">
+                                                    <label class="custom-control-label1" for="customCheck3">
+
+                                                        <div class="mt-1">رقم الهاتف</div>
+                                                    </label>
+                                                </div>
+                                                <div class=" custom-checkbox iconSelect">
+                                                    <input type="checkbox" id="customCheck4" name="customCheck"
+                                                        value="2" class="custom-control-input">
+                                                    <label class="custom-control-label1" for="customCheck4">
+
+                                                        <div class="mt-1">عنوان</div>
+                                                    </label>
+                                                </div>
+
+                                                <div class=" custom-checkbox iconSelect ">
+                                                    <input type="checkbox" id="customCheck5" name="customCheck"
+                                                        value="1" class="custom-control-input">
+                                                    <label class="custom-control-label1" for="customCheck5">
+                                                        <div class="mt-1">تاريخ الميلاد </div>
+                                                    </label>
+                                                </div>
+                                                <div class=" custom-checkbox iconSelect">
+                                                    <input type="checkbox" id="customCheck6" name="customCheck"
+                                                        value="2" class="custom-control-input">
+                                                    <label class="custom-control-label1" for="customCheck6">
+                                                        <div class="mt-1">اللقب</div>
+                                                    </label>
+                                                </div>
+                                                <div class=" custom-checkbox iconSelect">
+                                                    <input type="checkbox" id="customCheck7" name="customCheck"
+                                                        value="2" class="custom-control-input">
+                                                    <label class="custom-control-label1" for="customCheck7">
+                                                        <div class="mt-1"> الوظيفة</div>
+                                                    </label>
+                                                </div>
+                                                <div class=" custom-checkbox iconSelect">
+                                                    <input type="checkbox" id="customCheck8" name="customCheck"
+                                                        value="2" class="custom-control-input">
+                                                    <label class="custom-control-label1" for="customCheck8">
+                                                        <div class="mt-1">العنوان</div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="title-card"> المستندات المرفقة </p>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="wow  animate__animated animate__fadeInUp">
+
+                                            <div class="card-inputs  edit-col6-padding contnet-inputs-no-borader">
+                                                <p class="card-p-title">نوع العضوية</p>
+                                                <div class="flex-radio custom_radio contet-radio-inputs">
+                                                    <div>
+                                                        <input type="radio" id="featured-3" name="featured1"><label
+                                                            for="featured-3">
+                                                            عضو عامل </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-4" name="featured1"><label
+                                                            for="featured-4">
+                                                            عضو تابع</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-5" name="featured1"><label
+                                                            for="featured-5">
+                                                            الكل</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="wow  animate__animated animate__fadeInUp">
+
+                                            <div class="card-inputs  edit-col6-padding contnet-inputs-no-borader">
+                                                <p class="card-p-title">حالة العضوية</p>
+                                                <div class="flex-radio custom_radio contet-radio-inputs">
+                                                    <div>
+                                                        <input type="radio" id="featured-31" name="featured1"><label
+                                                            for="featured-31">
+                                                            سارية </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-41" name="featured1"><label
+                                                            for="featured-41">
+                                                            مسقطة </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-51" name="featured1"><label
+                                                            for="featured-51">
+                                                            موقوفة</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-21" name="featured1"><label
+                                                            for="featured-21">
+                                                            متوفي</label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="wow  animate__animated animate__fadeInUp">
+
+                                            <div class="card-inputs  edit-col6-padding contnet-inputs-no-borader">
+                                                <p class="card-p-title">الجمعية العمومية </p>
+                                                <div class="flex-radio custom_radio contet-radio-inputs">
+                                                    <div>
+                                                        <input type="radio" id="featured-35" name="featured1"><label
+                                                            for="featured-35">
+                                                            الاعضاء الحاضرين </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-45" name="featured1"><label
+                                                            for="featured-45">
+                                                            الااعضاء المتغيبين </label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group ">
+                                                    <select class="js-select2">
+                                                        <option>اختر عدد الاعوام</option>
+                                                        <option>شباب ورياضة</option>
+                                                        <option>شرطة - قوات مسلحة - قضاء</option>
+                                                        <option>شرفي</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="wow  animate__animated animate__fadeInUp">
+
+                                            <div class="card-inputs  edit-col6-padding contnet-inputs-no-borader">
+                                                <p class="card-p-title">تصنيفات مختلفة </p>
+                                                <div class="flex-radio custom_radio contet-radio-inputs">
+                                                    <div>
+                                                        <input type="radio" id="featured-34" name="featured1"><label
+                                                            for="featured-34">
+                                                            الوظيفة </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-44" name="featured1"><label
+                                                            for="featured-44">
+                                                            الفئة </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-54" name="featured1"><label
+                                                            for="featured-54">
+                                                            الجنسية</label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group ">
+                                                    <select class="js-select2">
+
+                                                        <option>اختر نوع التصنيف </option>
+                                                        <option>شباب ورياضة</option>
+                                                        <option>شرطة - قوات مسلحة - قضاء</option>
+                                                        <option>شرفي</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="  animate__animated animate__fadeInUp">
+    
+                                            <div class="card-inputs  edit-col6-padding contnet-inputs-no-borader">
+                                                <p class="card-p-title">تصنيفات مختلفة </p>
+                                                <div class="flex-radio custom_radio contet-radio-inputs">
+                                                    <div>
+                                                        <input type="radio" id="featured-351" name="featured1"><label
+                                                            for="featured-351">
+                                                            ابناء ذكور </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-451" name="featured1"><label
+                                                            for="featured-451">
+                                                            بنات اناث </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-55" name="featured1"><label
+                                                            for="featured-55">
+                                                            شقيقات</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-65" name="featured1"><label
+                                                            for="featured-65">
+                                                            ابناء شقيقات </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-75" name="featured1"><label
+                                                            for="featured-75">
+                                                            والد </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-85" name="featured1"><label
+                                                            for="featured-85">
+                                                            والدة </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="featured-95" name="featured1"><label
+                                                            for="featured-95">
+                                                            زوجة </label>
+                                                    </div>
+    
+    
+                                                </div>
+                                                <div class="flex-report-Affiliates">
+                                                    <span>السن</span>
+                                                    <div class="form-group ">
+                                                        <select class="js-select2">
+                                                            <option>  بداية من</option>
+                                                            <option>شباب ورياضة</option>
+                                                            <option>شرطة - قوات مسلحة - قضاء</option>
+                                                            <option>شرفي</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <select class="js-select2">
+                                                            <option> حتي</option>
+                                                            <option>شباب ورياضة</option>
+                                                            <option>شرطة - قوات مسلحة - قضاء</option>
+                                                            <option>شرفي</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                
+                                <div class="aligne-center">
+                                    <button class="material-btn report-btn">
+                                        <span class="wave"></span>
+                                         تاكيد
+                                    </button>
+                                </div>
+        
+                            </div>
+
+                            <!-- <div class="mt20 content-btns">
+                                    <button type="button" class="material-btn" data-toggle="modal"
+                                        data-target="#exampleModalCenter">
+                                        <span class="wave"></span>
+                                        حفظ
+                                    </button>
+                                    <button class="material-btn btn-not-color">
+                                        <span class="wave"></span>
+                                        الغاء
+                                    </button>
+                                </div>
+ -->
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- -------------- modallll ------------------ -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- end  modallll ------------------ -->
+
+    <!-- --------loader--------- -->
+
+    <!-- --------top--------- -->
+
+    <!-- scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- -------special for this page--------- -->
+    <script src='js/uploadimg.js'> </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".js-select2").select2();
+
+        });
+    </script>
+    <script src="js/button.js"></script>
+    <script src="js/upload-fle.js"> </script>
+    <!-- -------end special for this page---------- -->
+    <script src="js/js.js"></script>
+</body>
+
+</html>

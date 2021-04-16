@@ -816,7 +816,7 @@ section.content-login h4 {
 .card-inputs {
   background-color: #fff;
   padding: 20px 15px;
-  border-radius: 19px;
+  border-radius: 13px;
   box-shadow: 0px 2px 8px #0a429114;
   margin-bottom: 30px;
 }
@@ -985,10 +985,12 @@ p.size14 {
 .sidebar ul li:last-child {
   margin-bottom: 0;
 }
+.sidebar ul li .sidebar-href,
 .sidebar ul li a {
   color: #9d9d9d;
   font-size: 14px;
   width: 100%;
+  cursor: pointer;
 }
 .sidebar ul li a img {
   width: 20px;
@@ -1028,19 +1030,215 @@ span.attend.block {
 .mb-col-10 span:first-child {
   margin-bottom: 1px;
   color: #a2a2a2;
-  font-size: 13px;
+  font-size: 14px;
 }
 .mb-col-10 span:last-child {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
 }
 .title-size-edit {
   font-size: 19px;
 }
-.member-details-sec{
+.member-details-sec {
   background-image: unset;
 }
+.btns-spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+.btns-spaceCenter {
+  display: flex;
+  justify-content: center;
+}
+.modal .btns-spacebetween {
+  padding: 0 15px;
+}
+.modal .contnet-inputs-no-borader {
+  text-align: right;
+}
+.modal .contnet-inputs-no-borader label {
+  margin-bottom: 1px;
+  color: #9d9d9d;
+  font-size: 12px;
+  font-weight: bold;
+}
+.btns-spacebetween .material-btn {
+  padding: 5px 22px;
+  width: 150px;
+  border: 1px solid var(--theme-color);
+}
+.btns-spaceCenter .material-btn {
+  padding: 5px 22px;
+  width: 100px;
+  border: 1px solid var(--theme-color);
+  margin: 0 5px;
+}
+.edit-padding-modal .modal-content {
+  padding: 20px 0;
+}
+.material-btn.danger-btn {
+  background-color: #cb2727;
+  border-color: #cb2727;
+}
+
+/*********************************************************/
+
+/*radio button*/
+
+/********************************************************/
+
+.custom_radio {
+  margin: 5px;
+}
+.custom_radio input[type="radio"] {
+  display: none;
+}
+.custom_radio input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  padding-right: 1.5em;
+  cursor: pointer;
+  line-height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+}
+.custom_radio input[type="radio"] + label:before,
+.custom_radio input[type="radio"] + label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  color: white;
+  font-family: Times;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 2px solid #0b4291;
+}
+.custom_radio input[type="radio"] + label:before {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em white;
+  box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em white;
+}
+.custom_radio input[type="radio"] + label:hover:before {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
+  box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
+}
+.custom_radio input[type="radio"]:checked + label:before {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #0b4291;
+  box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #0b4291;
+}
+.width70 {
+  width: 70%;
+  margin: auto;
+}
+.titlesetting {
+  padding: 9px 37px;
+  background-color: #d6d6d6;
+  border-radius: 50px;
+  font-size: 25px;
+}
+.custom_radio div:first-child {
+  margin-left: 10px;
+}
+.flex-radio {
+  display: flex;
+  align-items: center;
+}
+.flex-radio + div {
+  margin-left: 10px;
+}
+.allow-focus p {
+  margin-bottom: 0;
+}
+/**********end radio button**********/
+/**********check button ***********/
+.iconSelect.custom-control {
+  padding-left: 0;
+}
+.iconSelect-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.iconSelect .custom-control-label1 {
+  background-color: #f5f5f5;
+  width: 90px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 13px;
+  transition: background-color 0.1s linear, color 0.1s linear;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.iconSelect .custom-control-label:hover {
+  background-color: #ccc;
+}
+
+.iconSelect .custom-control-input:checked ~ .custom-control-label1 {
+  background: #0b4291;
+  color: #fff;
+}
+.flex-details-report {
+  overflow-x: auto;
+  padding-bottom: 1px;
+}
+.flex-details-report::-webkit-scrollbar {
+  height: 4px;
+}
+.content-id {
+  background-image: url("../img/image-back/aljazeera_id3-0.png");
+}
+.card-p-title {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
 /*============endmember details =================*/
+/* =================report html =================*/
+.contet-radio-inputs div {
+  margin-left: 15px;
+}
+.contet-radio-inputs.custom_radio input[type="radio"] + label:before,
+.contet-radio-inputs.custom_radio input[type="radio"] + label:after {
+  width: 0.8em;
+  height: 0.8em;
+  border: 1px solid #0b4291;
+}
+.material-btn.report-btn {
+  padding: 5px 15px;
+}
+
+.report-btn{
+
+}
+/* .flex-report-Affiliates{
+  display: flex;
+  align-items: center;
+}
+.flex-report-Affiliates span {
+  margin-left: 10px;
+}
+.flex-report-Affiliates .form-group {
+  width: 33%;
+  margin-bottom: 0;
+  margin: 0 5px;
+} */
+/*================ end report html ==============*/
 /***************responsive******************************/
 /* Media Screen */
 @media (max-width: 1450px) {
@@ -1293,7 +1491,8 @@ span.attend.block {
     z-index: 99;
     border-top: 1px solid #e7e8e9;
   }
-  .sidebar ul li a img {
+  .sidebar ul li a img,
+  .sidebar ul li span img {
     display: -webkit-box;
     width: 25px;
   }
@@ -1303,18 +1502,43 @@ span.attend.block {
     height: 100%;
     width: calc(100vw / 7);
   }
-  .sidebar ul li a {
+  .sidebar ul li a,
+  .sidebar ul li span {
     color: #9d9d9d;
     font-size: 14px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.member-details-sec{
-  padding-bottom:80px ;
-}
+  }
+  .member-details-sec {
+    padding-bottom: 80px;
+  }
+  /*********select ***************/
+  .iconSelect .custom-control-label1 {
+    padding: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    font-size: 12px;
+  }
   /*============ end member details html===================*/
+  /*==============report html ============*/
+  .flex-radio {
+    flex-wrap: wrap;
+  }
+  .flex-report-Affiliates{
+    display: flex;
+    align-items: center;
+  }
+  .flex-report-Affiliates span {
+    margin-left: 10px;
+  }
+  .flex-report-Affiliates .form-group {
+    width: 100%;
+    margin-bottom: 0;
+    margin: 0 5px;
+}
+  /*=============== end report html ===========*/
 }
 @media only screen and (max-width: 600px) {
   .login-flex-form form {

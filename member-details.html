@@ -76,68 +76,68 @@
                     <div class="sidebar animate__animated animate__slideInRight">
                         <ul>
                             <li class="nav-active">
-                                <a href="member-details.html">
+                                <a href="member-details.html" class="sidebar-href">
                                     <!-- if not active use this img -->
-                                    <!-- <img src="img/member edit/VIEW.svg" alt=""> -->
+                                    <!-- <img src="img/sidebar/VIEW.svg" alt=""> -->
                                     <!-- if it is active use this img -->
-                                    <img src="img/member edit/VIEW1.svg" alt="">
+                                    <img src="img/sidebar/VIEW1.svg" alt="">
                                     عرض
                                 </a>
                             </li>
                             <li>
-                                <a href="follower-member.html">
+                                <a href="follower-member.html" class="sidebar-href">
                                     <!-- if not active use this img -->
-                                    <img src="img/member edit/edit.svg" alt="">
+                                    <img src="img/sidebar/edit.svg" alt="">
                                     <!-- if it is active use this img -->
-                                    <!-- <img src="img/member edit/edit1.svg" alt=""> -->
+                                    <!-- <img src="img/sidebar/edit1.svg" alt=""> -->
                                     تعديل
                                 </a>
                             </li>
                             <li>
                                 <a href="edit-member.html">
                                     <!-- if not active use this img -->
-                                    <img src="img/member edit/followers.svg" alt="">
+                                    <img src="img/sidebar/followers.svg" alt="">
                                     <!-- if it is active use this img -->
-                                    <!-- <img src="img/member edit/followers1.svg" alt=""> -->
+                                    <!-- <img src="img/sidebar/followers1.svg" alt=""> -->
                                     التابعين
                                 </a>
                             </li>
                             <li>
-                                <a href="edit-member.html">
+                                <span class="sidebar-href" data-toggle="modal" data-target="#modal-renewal">
                                     <!-- if not active use this img -->
-                                    <img src="img/member edit/renew.svg" alt="">
+                                    <img src="img/sidebar/renew.svg" alt="">
                                     <!-- if it is active use this img -->
-                                    <!-- <img src="img/member edit/renew1.svg" alt=""> -->
+                                    <!-- <img src="img/sidebar/renew1.svg" alt=""> -->
 
                                     تجديد
-                                </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="edit-member.html">
+                                <span class="sidebar-href" data-toggle="modal" data-target="#modal-clup-id">
                                     <!-- if not active use this img -->
-                                    <img src="img/member edit/id.svg" alt="">
+                                    <img src="img/sidebar/id.svg" alt="">
                                     <!-- if it is active use this img -->
-                                    <!-- <img src="img/member edit/id1.svg" alt=""> -->
+                                    <!-- <img src="img/sidebar/id1.svg" alt=""> -->
                                     كارنيه
-                                </a>
+                                    </a>
                             </li>
                             <li>
-                                <a href="edit-member.html">
+                                <span class="sidebar-href" data-toggle="modal" data-target="#modal-report">
                                     <!-- if not active use this img -->
-                                    <img src="img/member edit/report.svg" alt="">
+                                    <img src="img/sidebar/report.svg" alt="">
                                     <!-- if it is active use this img -->
-                                    <!-- <img src="img/member edit/report1.svg" alt=""> -->
+                                    <!-- <img src="img/sidebar/report1.svg" alt=""> -->
                                     تقرير
-                                </a>
+                                    </a>
                             </li>
                             <li>
-                                <a href="edit-member.html">
+                                <span class="sidebar-href" data-toggle="modal" data-target="#modal-archive">
                                     <!-- if not active use this img -->
-                                    <img src="img/member edit/archive.svg" alt="">
+                                    <img src="img/sidebar/archive.svg" alt="">
                                     <!-- if it is active use this img -->
-                                    <!-- <img src="img/member edit/archive1.svg" alt=""> -->
+                                    <!-- <img src="img/sidebar/archive1.svg" alt=""> -->
                                     ارشيف
-                                </a>
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -151,8 +151,8 @@
                                         <img src="img/people/1.jpg" alt="">
                                         <div>
                                             <span class="theme-color bold title-size-edit">56545</span>
-                                            <p class="bold name-card title-size-edit">احمد محمد طارق احمد   
-                                               
+                                            <p class="bold name-card title-size-edit">احمد محمد طارق احمد
+
                                             </p>
                                             <p class=" name-card ">رئيس مجلس الادارة</p>
                                         </div>
@@ -160,7 +160,7 @@
                                     <div class="card-status card-status-span">
                                         <div>
                                             <span class="block">نوع العضوية</span>
-                                            <span class="block">عضو عامل</span>
+                                            <span class="block">ابنة </span>
                                         </div>
                                         <div>
                                             <span class="block">الفئة</span>
@@ -285,28 +285,190 @@
     <!-- -------------- modallll ------------------ -->
 
 
+    <!-- -------------- modallll ------------------ -->
+
+
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    <div class="modal modal-succsess-add-member fade" id="modal-renewal" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <img src="img/icon/renewpopup.svg" class="wow  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">من فضلك, قم بإدخال رقم إيصال الدفع</p>
+                    <div class="contnet-inputs-no-borader ">
+                        <form action="">
+                            <div class="col-12">
+                                <div class="form-group ">
+                                    <label for="exampleInputEmail1"> رقم ايصال الدفع </label>
+                                    <div class="relative content-input">
+                                        <input class="input-radius effect-11 " type="text">
+                                        <span class="focus-bg"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns-spacebetween">
+                                <button type="button" class="material-btn" data-toggle="modal"
+                                    data-target="#modal-succsess-renewal">
+                                    <span class="wave"></span>
+                                    حفظ
+                                </button>
+                                <button class="material-btn btn-not-color" data-dismiss="modal">
+                                    <span class="wave"></span>
+                                    الغاء
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- succsess renewal modal -->
+    <!-- Modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-succsess-renewal" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/confirme2.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">تم التجديد بنجاح </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end succsess renewal modal -->
+    <!-- archive modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-archive" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/archivepopup.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">هل تريد ارسال بيانات العضو للارشيف؟ </p>
+                    <div class="btns-spaceCenter">
+                        <button type="button" class="material-btn danger-btn" data-toggle="modal"
+                            data-target="#modal-succsess-archive">
+                            <span class="wave"></span>
+                            ارشيف
+                        </button>
+                        <button class="material-btn btn-not-color" data-dismiss="modal">
+                            <span class="wave"></span>
+                            الغاء
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end archive modal -->
+
+    <!-- succsess archive modal -->
+    <!-- Modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-succsess-archive" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/sidebar/archive.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">تم أرشيف بيانات العضو </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end succsess renewal modal -->
+    <!-- report modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-report" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/reportpopup.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">استخراج تقرير مفصل عن هذا العضو </p>
+                    <ul class=" aligne-right allow-focus">
+                        <p>ارفاق بيانات الأعضاء التابعين له في التقرير؟</p>
+                        <div class="flex-radio custom_radio">
+                            <div>
+                                <input type="radio" id="featured-3" name="featured1"><label for="featured-3">
+                                    نعم </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="featured-4" name="featured1"><label for="featured-4">
+                                    لا</label>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="btns-spaceCenter">
+                        <button type="button" class="material-btn" data-toggle="modal"
+                            data-target="#modal-succsess-report">
+                            <span class="wave"></span>
+                            تاكيد
+                        </button>
+                        <button class="material-btn btn-not-color" data-dismiss="modal">
+                            <span class="wave"></span>
+                            الغاء
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end report modal -->
+    <!-- succsess report modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-succsess-report" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/confirme.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16"> تم استخراج التقرير, جاري التنزيل </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end succsess report modal -->
+
+    <!-- clup-id modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-clup-id" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/printpopup.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">هل تريد طباعه كارنية العضويه؟</p>
+
+                    <div class="content-id"></div>
+                    <div class="btns-spaceCenter">
+                        <button type="button" class="material-btn " data-toggle="modal"
+                            data-target="#modal-succsess-id">
+                            <span class="wave"></span>
+                            طباعة
+                        </button>
+                        <button class="material-btn btn-not-color" data-dismiss="modal">
+                            <span class="wave"></span>
+                            الغاء
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end clup-id modal -->
+    <!-- succsess report modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-succsess-id" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/confirme.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">جاري الطباعة.. برجاء الانتظار واستلام الكارنية </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end succsess report modal -->
     <!-- --------- end  modallll ------------------ -->
+
 
     <!-- --------loader--------- -->
 
