@@ -37,7 +37,7 @@
     <!-- ------------nav bar------------------ -->
     <section class="navigation navigation-member">
         <div class="nav-container">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-2 col-1 icon-flex">
                         <a href="home.html">
@@ -69,15 +69,80 @@
         </div>
     </section>
     <!-- content -->
-    <section class="all-section add-member-sec section-mt-170">
-        <div class="container ">
+    <section class="all-section add-member-sec  member-details-sec section-mt-170">
+        <div class="container-fluid ">
             <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-10">
-                    <div class=" section-content-header">
-                        <img src="img/icon/addmember2.svg" alt="">
-                        <span class="block">اضافة عضو جديد</span>
+                <div class="col-md-2 relative">
+                    <div class="sidebar animate__animated animate__slideInRight">
+                        <ul>
+                            <li>
+                                <a href="member-details.html" class="sidebar-href">
+                                    <!-- if not active use this img -->
+                                    <!-- <img src="img/sidebar/VIEW.svg" alt=""> -->
+                                    <!-- if it is active use this img -->
+                                    <img src="img/sidebar/VIEW1.svg" alt="">
+                                    عرض
+                                </a>
+                            </li>
+                            <li class="nav-active">
+                                <a href="edit-member.html" class="sidebar-href">
+                                    <!-- if not active use this img -->
+                                    <img src="img/sidebar/edit.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/sidebar/edit1.svg" alt=""> -->
+                                    تعديل
+                                </a>
+                            </li>
+                            <li>
+                                <a href="follower-member.html">
+                                    <!-- if not active use this img -->
+                                    <img src="img/sidebar/followers.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/sidebar/followers1.svg" alt=""> -->
+                                    التابعين
+                                </a>
+                            </li>
+                            <li>
+                                <span class="sidebar-href" data-toggle="modal" data-target="#modal-renewal">
+                                    <!-- if not active use this img -->
+                                    <img src="img/sidebar/renew.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/sidebar/renew1.svg" alt=""> -->
+
+                                    تجديد
+                                </span>
+                            </li>
+                            <li>
+                                <span class="sidebar-href" data-toggle="modal" data-target="#modal-clup-id">
+                                    <!-- if not active use this img -->
+                                    <img src="img/sidebar/id.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/sidebar/id1.svg" alt=""> -->
+                                    كارنيه
+                                    </a>
+                            </li>
+                            <li>
+                                <span class="sidebar-href" data-toggle="modal" data-target="#modal-report">
+                                    <!-- if not active use this img -->
+                                    <img src="img/sidebar/report.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/sidebar/report1.svg" alt=""> -->
+                                    تقرير
+                                    </a>
+                            </li>
+                            <li>
+                                <span class="sidebar-href" data-toggle="modal" data-target="#modal-archive">
+                                    <!-- if not active use this img -->
+                                    <img src="img/sidebar/archive.svg" alt="">
+                                    <!-- if it is active use this img -->
+                                    <!-- <img src="img/sidebar/archive1.svg" alt=""> -->
+                                    ارشيف
+                                </span>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div class="col-md-10">
                     <form class="form " action="profile.html">
                         <div class="row">
                             <div class="col-md-2">
@@ -110,7 +175,7 @@
                                                 <div class="form-group ">
                                                     <label for="exampleInputEmail1">رقم العضوية</label>
                                                     <div class="relative content-input">
-                                                        <input class="input-radius effect-11 " type="number">
+                                                        <input class="input-radius effect-11 " type="number" value="18286">
                                                         <span class="focus-bg"></span>
                                                     </div>
                                                 </div>
@@ -119,7 +184,7 @@
                                                 <div class="form-group ">
                                                     <label for="exampleInputEmail1">نوع العضوية </label>
                                                     <div class="relative content-input">
-                                                        <input class="input-radius effect-11 " type="text">
+                                                        <input class="input-radius effect-11 " type="text" value="عضو عامل">
                                                         <span class="focus-bg"></span>
                                                     </div>
                                                 </div>
@@ -151,7 +216,7 @@
                                                 <div class="form-group ">
                                                     <label for="exampleInputEmail1">الاسم </label>
                                                     <div class="relative content-input">
-                                                        <input class="input-radius effect-11 " type="text">
+                                                        <input class="input-radius effect-11 " type="text" value="احمد محمد احمد طارق">
                                                         <span class="focus-bg"></span>
                                                     </div>
                                                 </div>
@@ -160,7 +225,127 @@
                                                 <div class="form-group ">
                                                     <label for="exampleInputEmail1">اللقب </label>
                                                     <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="text" value="رئيس مجلس الادارة">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wow  animate__animated animate__fadeInUp">
+                                    <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1">رقم الهاتف</label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="number" value="010905868">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> العنوان </label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="text" value="توريل-ش بوتاري-تقاطع مختار المصري">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1">رقم البطاقة</label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="number" value="586358574898574">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1">سجل مدني </label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="number" value="المنصورة">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> المؤهل </label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="text" value="مؤهل عالي">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> الوظيفة </label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="text" value="محاسب">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wow  animate__animated animate__fadeInUp">
+                                    <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> الحالة الاجتماعية </label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="text" value="متزوج">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> الجنسية </label>
+                                                    <div class="relative content-input">
                                                         <input class="input-radius effect-11 " type="text">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> تاريخ الميلاد</label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="date">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1">محل الميلاد </label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="text" value='المنصورة- الدقهلية'>
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> النوع </label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="text" value="ذكر">
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> الديانة </label>
+                                                    <div class="relative content-input">
+                                                        <input class="input-radius effect-11 " type="text" value="مسلم"> 
                                                         <span class="focus-bg"></span>
                                                     </div>
                                                 </div>
@@ -169,9 +354,29 @@
                                     </div>
                                 </div>
                                 
+                                <div class="wow  animate__animated animate__fadeInUp">
+                                    
+                                    <div class="card-inputs  edit-col6-padding contnet-inputs-no-borader">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group ">
+                                                    <label for="exampleInputEmail1"> صورة بطاقة القم القومي </label>
+
+                                                    <div class="input-group relative content-input input-file">
+                                                        <span class="input-group-btn">
+                                                            <img src="img/icon/photo-camera.svg" class="btn-choose">
+                                                        </span>
+                                                        <input type="text" class="input-radius effect-11 " />
+                                                        <span class="focus-bg"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                    </div>
+                                </div>
                                 <div class="mt20 content-btns">
                                     <button type="button" class="material-btn" data-toggle="modal"
-                                        data-target="#exampleModalCenter">
+                                        data-target="#modal-addMember">
                                         <span class="wave"></span>
                                         حفظ
                                     </button>
@@ -180,6 +385,10 @@
                                         الغاء
                                     </button>
                                 </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-12">
 
                             </div>
                         </div>
@@ -191,28 +400,190 @@
     <!-- -------------- modallll ------------------ -->
 
 
+    <!-- -------------- modallll ------------------ -->
+
+
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    <div class="modal modal-succsess-add-member fade" id="modal-renewal" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <img src="img/icon/renewpopup.svg" class="wow  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">من فضلك, قم بإدخال رقم إيصال الدفع</p>
+                    <div class="contnet-inputs-no-borader ">
+                        <form action="">
+                            <div class="col-12">
+                                <div class="form-group ">
+                                    <label for="exampleInputEmail1"> رقم ايصال الدفع </label>
+                                    <div class="relative content-input">
+                                        <input class="input-radius effect-11 " type="text">
+                                        <span class="focus-bg"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns-spacebetween">
+                                <button type="button" class="material-btn" data-toggle="modal"
+                                    data-target="#modal-succsess-renewal">
+                                    <span class="wave"></span>
+                                    حفظ
+                                </button>
+                                <button class="material-btn btn-not-color" data-dismiss="modal">
+                                    <span class="wave"></span>
+                                    الغاء
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- succsess renewal modal -->
+    <!-- Modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-succsess-renewal" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/confirme2.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">تم التجديد بنجاح </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end succsess renewal modal -->
+    <!-- archive modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-archive" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/archivepopup.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">هل تريد ارسال بيانات العضو للارشيف؟ </p>
+                    <div class="btns-spaceCenter">
+                        <button type="button" class="material-btn danger-btn" data-toggle="modal"
+                            data-target="#modal-succsess-archive">
+                            <span class="wave"></span>
+                            ارشيف
+                        </button>
+                        <button class="material-btn btn-not-color" data-dismiss="modal">
+                            <span class="wave"></span>
+                            الغاء
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end archive modal -->
+
+    <!-- succsess archive modal -->
+    <!-- Modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-succsess-archive" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/sidebar/archive.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">تم أرشيف بيانات العضو </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end succsess renewal modal -->
+    <!-- report modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-report" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/reportpopup.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">استخراج تقرير مفصل عن هذا العضو </p>
+                    <ul class=" aligne-right allow-focus">
+                        <p>ارفاق بيانات الأعضاء التابعين له في التقرير؟</p>
+                        <div class="flex-radio custom_radio edit-modal-space">
+                            <div>
+                                <input type="radio" id="featured-3" name="featured1"><label for="featured-3">
+                                    <span>نعم</span> </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="featured-4" name="featured1"><label for="featured-4">
+                                    <span>لا</span></label>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="btns-spaceCenter">
+                        <button type="button" class="material-btn" data-toggle="modal"
+                            data-target="#modal-succsess-report">
+                            <span class="wave"></span>
+                            تاكيد
+                        </button>
+                        <button class="material-btn btn-not-color" data-dismiss="modal">
+                            <span class="wave"></span>
+                            الغاء
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end report modal -->
+    <!-- succsess report modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-succsess-report" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/confirme.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16"> تم استخراج التقرير, جاري التنزيل </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end succsess report modal -->
+
+    <!-- clup-id modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-clup-id" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/printpopup.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">هل تريد طباعه كارنية العضويه؟</p>
+
+                    <div class="content-id"></div>
+                    <div class="btns-spaceCenter">
+                        <button type="button" class="material-btn " data-toggle="modal"
+                            data-target="#modal-succsess-id">
+                            <span class="wave"></span>
+                            طباعة
+                        </button>
+                        <button class="material-btn btn-not-color" data-dismiss="modal">
+                            <span class="wave"></span>
+                            الغاء
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end clup-id modal -->
+    <!-- succsess report modal -->
+    <div class="modal modal-succsess-add-member edit-padding-modal fade" id="modal-succsess-id" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/icon/confirme.svg" class="  animate__animated animate__zoomIn" alt="">
+                    <p class="bold-size16">جاري الطباعة.. برجاء الانتظار واستلام الكارنية </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end succsess report modal -->
     <!-- --------- end  modallll ------------------ -->
+
 
     <!-- --------loader--------- -->
 
