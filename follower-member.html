@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="HandheldFriendly" content="true">
     <meta name="theme-color" content="#0a4291;" />
-    <title> نادي جزيرة الورد || اضافة عضو جديد </title>
+    <title> نادي جزيرة الورد || الاعضاء التابعين </title>
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
@@ -17,7 +17,7 @@
     <!-- animate -->
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- special for this page -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="css/select2.min.css" rel="stylesheet" />
 
     <!-- end special -->
     <link rel="stylesheet" href="css/style.css">
@@ -178,7 +178,9 @@
 
 
                             <form class="form " action="profile.html">
-                                <div class="wow  animate__animated animate__fadeInUp">
+
+                                <div class="wow  animate__animated animate__fadeInUp content-folower">
+                                    <p class="title-card"> الأعضاء التابعين (1 عضو) </p>
                                     <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
                                         <div class="row">
                                             <div class="col-md-3">
@@ -203,12 +205,12 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div> 
+                                                </div>
                                                 <div class="flex-opreation-icon">
                                                     <img src="img/icon/levelup.svg" alt="">
                                                     <img src="img/icon/stop.svg" alt="">
-                                                    <img src="img/icon/delet.svg" alt="">
-                                                </div>           
+                                                    <img class="delete-img" src="img/icon/delet.svg" alt="">
+                                                </div>
                                             </div>
                                             <div class="col-md-9">
 
@@ -240,7 +242,7 @@
                                                             <label for="exampleInputEmail1">الاسم </label>
                                                             <div class="relative content-input">
                                                                 <input class="input-radius effect-11 " type="text"
-                                                                    value="18286">
+                                                                    value="اسماء اسماعيل محمد">
                                                                 <span class="focus-bg"></span>
                                                             </div>
                                                         </div>
@@ -260,7 +262,7 @@
                                                         <div class="form-group ">
                                                             <label for="exampleInputEmail1">تاريخ الميلاد </label>
                                                             <div class="relative content-input">
-                                                                <input class="input-radius effect-11 " type="text"
+                                                                <input class="input-radius effect-11 " type="date"
                                                                     value="3 - 5 -2020">
                                                                 <span class="focus-bg"></span>
                                                             </div>
@@ -268,7 +270,7 @@
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="form-group ">
-                                                            <label for="exampleInputEmail1">النوع  </label>
+                                                            <label for="exampleInputEmail1">النوع </label>
                                                             <div class="relative content-input">
                                                                 <input class="input-radius effect-11 " type="text"
                                                                     value=" انثي">
@@ -276,8 +278,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
-                                                   
+
+
                                                 </div>
                                                 <div class="mt20 content-btns">
                                                     <button type="button" class="material-btn" data-toggle="modal"
@@ -298,6 +300,121 @@
 
                                         </div>
                                     </div>
+                                </div>
+
+
+                                <div class="wow  animate__animated animate__fadeInUp">
+                                    <p class="title-card"> إضافة عضو تابع</p>
+                                    <div class="card-inputs edit-col6-padding contnet-inputs-no-borader">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class=" profile-content">
+                                                    <div class="profile1 sec-profile profile-edit  profile-content1">
+                                                        <div class="form-group">
+                                                            <div class="profile-pic ">
+                                                                <div class="images-upload-block photo ">
+                                                                    <label class="upload-img photo"
+                                                                        style="background-image: url(img/pic.jpg)">
+                                                                        <input type="file" accept="image/*"
+                                                                            name="avatar" id="avatar"
+                                                                            class="image-uploader form-control">
+                                                                        <div class="content-camera">
+                                                                            <img src="img/icon/camera.png" alt="">
+                                                                        </div>
+                                                                        <!-- <i class="fa fa-plus"></i> -->
+                                                                    </label>
+                                                                    <small class="form-text text-danger"
+                                                                        id="avatar_error"></small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-9">
+
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="form-group ">
+                                                            <label for="exampleInputEmail1">رقم التسلسل </label>
+                                                            <div class="relative content-input">
+                                                                <input class="input-radius effect-11 " type="number">
+                                                                <span class="focus-bg"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group ">
+                                                            <label for="exampleInputEmail1">نوع العضوية </label>
+                                                            <div class="relative content-input">
+                                                                <input class="input-radius effect-11 " type="text">
+                                                                <span class="focus-bg"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-6">
+                                                        <div class="form-group ">
+                                                            <label for="exampleInputEmail1">الاسم </label>
+                                                            <div class="relative content-input">
+                                                                <input class="input-radius effect-11 " type="text">
+                                                                <span class="focus-bg"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group ">
+                                                            <label for="exampleInputEmail1">نوع التبعية </label>
+                                                            <div class="relative content-input">
+                                                                <input class="input-radius effect-11 " type="text">
+                                                                <span class="focus-bg"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-6">
+                                                        <div class="form-group ">
+                                                            <label for="exampleInputEmail1">تاريخ الميلاد </label>
+                                                            <div class="relative content-input">
+                                                                <input class="input-radius effect-11 " type="date">
+                                                                <span class="focus-bg"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group ">
+                                                            <label for="exampleInputEmail1">النوع </label>
+                                                            <div class="relative content-input">
+                                                                <input class="input-radius effect-11 " type="text">
+                                                                <span class="focus-bg"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="mt20 content-btns">
+                                                    <button type="button" class="material-btn" data-toggle="modal"
+                                                        data-target="#modal-addMember">
+                                                        <span class="wave"></span>
+                                                        حفظ
+                                                    </button>
+                                                    <button class="material-btn btn-not-color">
+                                                        <span class="wave"></span>
+                                                        الغاء
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4 col-12">
+
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
 
 
@@ -509,7 +626,7 @@
     <script src="js/wow.min.js"></script>
     <!-- -------special for this page--------- -->
     <script src='js/uploadimg.js'> </script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".js-select2").select2();
@@ -518,6 +635,12 @@
     </script>
     <script src="js/button.js"></script>
     <script src="js/upload-fle.js"> </script>
+    <!-- delete follower -->
+    <script>
+        $(".delete-img").click(function () {
+            $(this).parents('.content-folower').remove();
+        });
+    </script>
     <!-- -------end special for this page---------- -->
     <script src="js/js.js"></script>
 </body>
