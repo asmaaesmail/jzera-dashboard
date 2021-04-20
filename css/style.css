@@ -1215,12 +1215,16 @@ span.attend.block {
 .contet-radio-inputs.custom_radio input[type="radio"] + label:after {
   width: 0.8em;
   height: 0.8em;
-  border:1px solid #9d9d9d;
+  border: 1px solid #9d9d9d;
 }
-.contet-radio-inputs.custom_radio.custom_radio input[type="radio"]:checked + label:after{
-  border-color:#0b4291 ;
+.contet-radio-inputs.custom_radio.custom_radio
+  input[type="radio"]:checked
+  + label:after {
+  border-color: #0b4291;
 }
-.contet-radio-inputs.custom_radio.custom_radio input[type="radio"]:checked + label{
+.contet-radio-inputs.custom_radio.custom_radio
+  input[type="radio"]:checked
+  + label {
   color: #0b4291;
 }
 .material-btn.report-btn {
@@ -1236,11 +1240,10 @@ span.attend.block {
   margin: 5px;
   margin-bottom: 0;
 }
-.report-btn{
-
+.report-btn {
 }
-.edit-modal-space label span{
-margin-right: 5px;
+.edit-modal-space label span {
+  margin-right: 5px;
 }
 
 .edit-modal-space.custom_radio div:first-child {
@@ -1259,37 +1262,34 @@ margin-right: 5px;
   object-fit: contain;
   cursor: pointer;
 }
-.content-id {
-  background-image: url("../img/image-back/aljazeera_id3-0.png");
-  width: 100%;
-  height: 230px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin-bottom: 20px;
-}
-.ui-datepicker-inline.ui-datepicker{
+.ui-datepicker-inline.ui-datepicker {
   margin: auto;
   margin-bottom: 15px;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
- 
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
   text-align: center;
 }
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-  border: 0 !important; 
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 0 !important;
   background: unset;
   font-weight: normal;
 }
 .ui-datepicker {
   width: 85%;
-  border:0;
+  border: 0;
 }
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-  color: #0A0A0A;
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  color: #0a0a0a;
 }
 .ui-datepicker th span {
-  color: #9D9D9D;
+  color: #9d9d9d;
 }
 .ui-widget-header {
   border: 0;
@@ -1297,17 +1297,101 @@ margin-right: 5px;
   color: #222222;
   font-weight: bold;
 }
-.ui-state-active, .ui-widget-content .ui-state-active{
+.ui-state-active,
+.ui-widget-content .ui-state-active {
   background: #ccc !important;
-  color: #0A0A0A !important;
+  color: #0a0a0a !important;
   border-radius: 5px;
 }
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
   background: #0b4291 !important;
   color: #fff !important;
   border-radius: 5px;
 }
 /*=============== end followers html==========*/
+/*=================modal id ==============*/
+.modal-succsess-add-member .modal-content.modal-content-id {
+  width: 100% !important;
+}
+.flex-card-id {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 15px 0 25px;
+}
+.modal-content-id .content-id {
+  background-image: url(../img/image-back/aljazeera_id3-0.png);
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+}
+.personal-img-id {
+  width: 155px !important;
+  height: 177px !important;
+  border-radius: 0 20px 0 0;
+}
+.flex-barcode {
+  display: flex;
+  align-items: center !important;
+}
+.content-name-id {
+  text-align: right;
+  font-weight: bold;
+}
+.content-name-id p {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.content-name-id p span:first-child {
+  font-weight: 100;
+}
+.flex-barcode {
+  font-size: 16px;
+}
+.flex-barcode img {
+  width: 80px !important;
+  height: 76px !important;
+  margin-bottom: 0 !important;
+  margin-left: 5px;
+}
+.content-img-id p {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.flex-barcode div:first-child {
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+.id-header p:first-child {
+  position: absolute;
+  right: 115px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  top: 15px;
+  margin-bottom: 0;
+}
+.id-header p:first-child span:last-child {
+  font-weight: 100;
+}
+.id-header p:last-child {
+  position: absolute;
+  right: 90px;
+  top: 83px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+.modal-succsess-add-member .modal-content-id-succses{
+  width: 100% !important;
+}
+/*=======end modal id =============*/
 /***************responsive******************************/
 /* Media Screen */
 @media (max-width: 1450px) {
@@ -1595,7 +1679,7 @@ margin-right: 5px;
   .flex-radio {
     flex-wrap: wrap;
   }
-  .flex-report-Affiliates{
+  .flex-report-Affiliates {
     display: flex;
     align-items: center;
   }
@@ -1606,26 +1690,26 @@ margin-right: 5px;
     width: 100%;
     margin-bottom: 0;
     margin: 0 5px;
-}
-p.bold-size16 {
-  font-size: 14px;
-  font-weight: bold;
-}
-.allow-focus p {
-  font-size: 13px;
-}
-.flex-img-name p {
-  width: 100%;
-}
-.sidebar {
-  border-radius: 0;
-}
-.title-size-edit {
-  font-size: 15px;
-}
-.btns-spacebetween .material-btn {
-  width: 100px;
-}
+  }
+  p.bold-size16 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .allow-focus p {
+    font-size: 13px;
+  }
+  .flex-img-name p {
+    width: 100%;
+  }
+  .sidebar {
+    border-radius: 0;
+  }
+  .title-size-edit {
+    font-size: 15px;
+  }
+  .btns-spacebetween .material-btn {
+    width: 100px;
+  }
   /*=============== end report html ===========*/
 }
 @media only screen and (max-width: 600px) {
@@ -1633,6 +1717,100 @@ p.bold-size16 {
     width: 80%;
     margin: auto;
   }
+
+
+
+  /*=======start modal id =============*/  
+  .modal-content.modal-content-id{
+    margin: auto;
+  }
+  .flex-card-id {
+    padding: 0 15px 0 25px;
+  }
+  .modal-content-id .content-id {
+    height: 250px;
+  }
+  .personal-img-id {
+    width: 120px !important;
+    height: 116px !important;
+    border-radius: 0 20px 0 0;
+  }
+ 
+  .content-name-id p {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .content-name-id p span:first-child {
+    font-weight: 100;
+  }
+  .flex-barcode {
+    font-size: 12px;
+  }
+  .flex-barcode img {
+    width: 60px !important;
+    height: 60px !important;
+    margin-bottom: 0 !important;
+    margin-left: 5px;
+  }
+  .content-img-id p {
+    margin-bottom: 5px;
+    font-size: 12px
+  }
+  .flex-barcode div:first-child {
+    margin-bottom: 5px;
+    margin-top: 1px;
+  }
+  .id-header p:first-child {
+
+    right: 90px;
+    font-size: 15px;
+    top: 15px;
+    margin-bottom: 0;
+  }
+  .id-header p:first-child span:last-child {
+    font-weight: 100;
+  }
+  .id-header p:last-child {
+    right: 70px;
+    top: 71px;
+    font-size: 15px;
+  }
+  /*=======end modal id =============*/
+
+
+}
+@media only screen and (max-width: 400px) {
+   /*=======start modal id =============*/
+
+   .id-header p:first-child {
+    right: 60px;
+    font-size: 13px;
+    top: 17px;
+    margin-bottom: 0;
+}
+.id-header p:last-child {
+  right: 44px;
+  top: 73px;
+  font-size: 13px;
+}
+.personal-img-id {
+  width: 100px !important;
+  height: 122px !important;
+  border-radius: 0 20px 0 0;
+}
+.flex-barcode img {
+  width: 50px !important;
+  height: 55px !important;
+}
+.content-name-id p {
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+.flex-card-id {
+  padding: 0 3px 0 4px;
+}
+  /*=======end modal id =============*/
+
 }
 @media only screen and (max-width: 320px) {
   .img-sec1-none {
