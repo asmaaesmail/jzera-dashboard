@@ -569,10 +569,10 @@ div#digital-clock + img {
 .section-content-header img {
   width: 35px;
 }
-.form-content-search {
+/* .form-content-search {
   width: 60%;
   margin: auto;
-}
+} */
 table.table td {
   border: 0;
 }
@@ -1200,9 +1200,7 @@ span.attend.block {
 .flex-details-report::-webkit-scrollbar {
   height: 4px;
 }
-.content-id {
-  background-image: url("../img/image-back/aljazeera_id3-0.png");
-}
+
 .card-p-title {
   margin-bottom: 0;
   font-size: 13px;
@@ -1261,8 +1259,53 @@ margin-right: 5px;
   object-fit: contain;
   cursor: pointer;
 }
-.delete-img{
-  
+.content-id {
+  background-image: url("../img/image-back/aljazeera_id3-0.png");
+  width: 100%;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+}
+.ui-datepicker-inline.ui-datepicker{
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+ 
+  text-align: center;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 0 !important; 
+  background: unset;
+  font-weight: normal;
+}
+.ui-datepicker {
+  width: 85%;
+  border:0;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  color: #0A0A0A;
+}
+.ui-datepicker th span {
+  color: #9D9D9D;
+}
+.ui-widget-header {
+  border: 0;
+  background: unset;
+  color: #222222;
+  font-weight: bold;
+}
+.ui-state-active, .ui-widget-content .ui-state-active{
+  background: #ccc !important;
+  color: #0A0A0A !important;
+  border-radius: 5px;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background: #0b4291 !important;
+  color: #fff !important;
+  border-radius: 5px;
 }
 /*=============== end followers html==========*/
 /***************responsive******************************/
