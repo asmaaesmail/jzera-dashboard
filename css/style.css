@@ -1710,6 +1710,9 @@ span.attend.block {
   .btns-spacebetween .material-btn {
     width: 100px;
   }
+  .edit-section-mt-190.section-mt-170 {
+    margin-top: -190px;
+}
   /*=============== end report html ===========*/
 }
 @media only screen and (max-width: 600px) {
