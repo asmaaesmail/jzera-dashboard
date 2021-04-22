@@ -85,13 +85,13 @@
                     <div class="form-content-search">
                         <form action="searchResult.html">
                             <i class="fas fa-search"></i>
-                            <input type="text" name="" id="">
+                            <input type="text" name="" id="autocomplete" >
                             <button class="material-btn">
                                 <span class="wave"></span>
                                 بحث
                             </button>
                         </form>
-                        <div class="content-table-member">
+                        <!-- <div class="content-table-member">
                             <table class="table">
                                 <tbody>
                                     <tr>
@@ -106,7 +106,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -125,7 +125,99 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!-- special for this page -->
+    <script src="js/jquery.autocomplete.min.js"></script>
+<script>
+    /*http://laravel.io/forum/02-08-2014-ajax-autocomplete-input*/
+var countries = {
+    "AD": "Andorra",
+    "A2": "Andorra Test",
+    "AE": "United Arab Emirates",
+    "AR": "Argentina",
+    "AS": "American Samoa",
+    "AT": "Austria",
+    "AZ": "Azerbaijan",
+    "BS": "Bahamas",
+    "BT": "Bhutan",
+    "BV": "Bouvet Island",
+    "BW": "Botswana",
+    "BY": "Belarus",
+    "BZ": "Belize",
+    "CA": "Canada",
+    "CC": "Cocos [Keeling] Islands",
+    "CK": "Cook Islands",
+    "CL": "Chile",
+    "CM": "Cameroon",
+    "CN": "China",
+    "CY": "Cyprus",
+    "CZ": "Czech Republic",
+    "DD": "East Germany",
+    "DE": "Germany",
+    "DJ": "Djibouti",
+    "DK": "Denmark",
+    "DM": "Dominica",
+    "DO": "Dominican Republic",
+    "DZ": "Algeria",
+    "EC": "Ecuador",
+    "ES": "Spain",
+    "ET": "Ethiopia",
+    "FI": "Finland",
+    "FJ": "Fiji",
+    "FK": "Falkland Islands",
+    "FM": "Micronesia",
+    "GA": "Gabon",
+    "GB": "United Kingdom",
+    "GW": "Guinea-Bissau",
+    "GY": "Guyana",
+    "HK": "Hong Kong SAR China",
+    "HM": "Heard Island and McDonald Islands",
+    "HU": "Hungary",
+    "ID": "Indonesia",
+    "IE": "Ireland",
+    "IQ": "Iraq",
+    "IR": "Iran",
+    "IS": "Iceland",
+    "IT": "Italy",
+    "JE": "Jersey",
+    "JM": "Jamaica",
+    "JO": "Jordan",
+    "JP": "Japan",
+    "JT": "Johnston Island",
+    "KE": "Kenya",
+    "KG": "Kyrgyzstan",
+    "KH": "Cambodia",
+    "KI": "Kiribati",
+    "KR": "South Korea",
+    "KZ": "Kazakhstan",
+    "LA": "Laos",
+    "LK": "Sri Lanka",
+}
+var countriesString = [
+    "Andorra",
+    "Andorra Test",
+    "United Arab Emirates"
+];
+var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
 
+// Initialize ajax autocomplete:
+$('#autocomplete').autocomplete({
+    // serviceUrl: '/autosuggest/service/url',
+    //lookup: countriesString,
+    lookup: countriesArray,
+    lookupFilter: function(suggestion, originalQuery, queryLowerCase) {
+        var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
+        return re.test(suggestion.value);
+    },
+    onSelect: function(suggestion) {
+        $('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
+    },
+    onHint: function (hint) {
+        $('#autocomplete-ajax-x').val(hint);
+    },
+    onInvalidateSelection: function() {
+        $('#selction-ajax').html('You selected: none');
+    }
+});
+</script>
     <!-- end special for this page -->
     <script src="js/js.js"></script>
 </body>

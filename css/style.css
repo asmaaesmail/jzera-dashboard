@@ -587,13 +587,19 @@ td.td-position {
   padding: 5px;
   width: 65px;
   font-weight: bold;
+  position: absolute;
+  left: 8px;
+  top: 5px;
 }
 
 .form-content-search input {
-  width: calc(100% - 103px);
+  /* width: calc(100% - 103px); */
+  width: 100%;
+  text-indent: 19px;
 }
 .form-content-search i {
-  margin-right: 5px;
+  position: absolute;
+  right: 5px;
   color: #a4a4a4;
 }
 .content-table-member {
@@ -622,7 +628,19 @@ td.td-position {
   width: 100%;
   top: 26px;
 }
-.content-table-member {
+.autocomplete-suggestions {
+  position: absolute;
+  max-height: 300px;
+  z-index: 9999;
+  top: 253px !important;
+ /*  right: 14px !important;
+  left: 14px !important; */
+  box-shadow: rgb(10 66 145 / 8%) 0px 2px 8px !important;
+  border-radius: 0px 0px 13px 13px !important;
+  padding: 10px 5px 10px !important;
+  background-color: rgb(255, 255, 255) !important;
+  /* width: unset !important; */
+  border: unset !important;
 }
 /*===================end member html =======*/
 /****************************************************/
@@ -1388,10 +1406,49 @@ span.attend.block {
   color: #fff;
   font-size: 20px;
 }
-.modal-succsess-add-member .modal-content-id-succses{
+.modal-succsess-add-member .modal-content-id-succses {
   width: 100% !important;
 }
 /*=======end modal id =============*/
+
+/*============auto complete ============*/
+
+.autocomplete-suggestions {
+  text-align: left;
+  border: 1px solid #999;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: #fff;
+  overflow: auto;
+}
+
+.autocomplete-suggestion {
+  padding: 5px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.autocomplete-selected {
+  background: #f0f0f0;
+}
+
+.autocomplete-suggestions strong {
+  font-weight: normal;
+  color: #3399ff;
+}
+
+.autocomplete-group {
+  padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+  display: block;
+  border-bottom: 1px solid #000;
+}
 /***************responsive******************************/
 /* Media Screen */
 @media (max-width: 1450px) {
@@ -1712,8 +1769,13 @@ span.attend.block {
   }
   .edit-section-mt-190.section-mt-170 {
     margin-top: -190px;
-}
+  }
   /*=============== end report html ===========*/
+  /*======autocpmplete===========*/
+  .autocomplete-suggestions {
+
+    top: 243px !important;
+  }
 }
 @media only screen and (max-width: 600px) {
   .login-flex-form form {
@@ -1721,10 +1783,8 @@ span.attend.block {
     margin: auto;
   }
 
-
-
-  /*=======start modal id =============*/  
-  .modal-content.modal-content-id{
+  /*=======start modal id =============*/
+  .modal-content.modal-content-id {
     margin: auto;
   }
   .flex-card-id {
@@ -1738,7 +1798,7 @@ span.attend.block {
     height: 116px !important;
     border-radius: 0 20px 0 0;
   }
- 
+
   .content-name-id p {
     margin-bottom: 16px;
     font-size: 16px;
@@ -1757,14 +1817,13 @@ span.attend.block {
   }
   .content-img-id p {
     margin-bottom: 5px;
-    font-size: 12px
+    font-size: 12px;
   }
   .flex-barcode div:first-child {
     margin-bottom: 5px;
     margin-top: 1px;
   }
   .id-header p:first-child {
-
     right: 90px;
     font-size: 15px;
     top: 15px;
@@ -1779,41 +1838,38 @@ span.attend.block {
     font-size: 15px;
   }
   /*=======end modal id =============*/
-
-
 }
 @media only screen and (max-width: 400px) {
-   /*=======start modal id =============*/
+  /*=======start modal id =============*/
 
-   .id-header p:first-child {
+  .id-header p:first-child {
     right: 60px;
     font-size: 13px;
     top: 17px;
     margin-bottom: 0;
-}
-.id-header p:last-child {
-  right: 44px;
-  top: 73px;
-  font-size: 13px;
-}
-.personal-img-id {
-  width: 100px !important;
-  height: 122px !important;
-  border-radius: 0 20px 0 0;
-}
-.flex-barcode img {
-  width: 50px !important;
-  height: 55px !important;
-}
-.content-name-id p {
-  margin-bottom: 2px;
-  font-size: 13px;
-}
-.flex-card-id {
-  padding: 0 3px 0 4px;
-}
+  }
+  .id-header p:last-child {
+    right: 44px;
+    top: 73px;
+    font-size: 13px;
+  }
+  .personal-img-id {
+    width: 100px !important;
+    height: 122px !important;
+    border-radius: 0 20px 0 0;
+  }
+  .flex-barcode img {
+    width: 50px !important;
+    height: 55px !important;
+  }
+  .content-name-id p {
+    margin-bottom: 2px;
+    font-size: 13px;
+  }
+  .flex-card-id {
+    padding: 0 3px 0 4px;
+  }
   /*=======end modal id =============*/
-
 }
 @media only screen and (max-width: 320px) {
   .img-sec1-none {

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- special for this page -->
     <link href="css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
 
     <!-- end special -->
     <link rel="stylesheet" href="css/style.css">
@@ -379,7 +379,8 @@
                                                         <div class="form-group ">
                                                             <label for="exampleInputEmail1">تاريخ الميلاد </label>
                                                             <div class="relative content-input">
-                                                                <input class="input-radius effect-11 " type="date">
+                                                                <input class="input-radius effect-11 " 
+                                                                    value="3 - 5 -2020"  data-toggle="modal" data-target="#modal-calendar"> 
                                                                 <span class="focus-bg"></span>
                                                             </div>
                                                         </div>
@@ -677,6 +678,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!-- -------special for this page--------- -->
+    <script src="js/button.js"></script>
     <script src='js/uploadimg.js'> </script>
     <script src="js/select2.min.js"></script>
     <script>
@@ -685,7 +687,7 @@
 
         });
     </script>
-    <script src="js/button.js"></script>
+   
     <script src="js/upload-fle.js"> </script>
     <!-- delete follower -->
     <script>
@@ -693,7 +695,7 @@
             $(this).parents('.content-folower').remove();
         });
     </script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script>
         $(function () {
             $("#datepicker").datepicker();
