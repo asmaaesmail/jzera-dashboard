@@ -1477,10 +1477,27 @@ span.attend.block {
 }
 @media (min-width: 991px) and (max-width: 1199px) {
 }
-@media (max-width: 1024px) {
+@media (min-width: 767px)  {
   .flex-img-name p {
     width: 100%;
   }
+  .edit-profile .profile1 .images-upload-block{
+    width: 100%;
+    height: 130px;
+  }
+  .edit-profile .profile-pic {
+    width: 100%;
+    height: 140px;
+}
+.edit-margin-top.section-mt-170{
+  margin-top: -150px;
+}
+.edit-margin-top .profile-edit .upload-img .content-camera{
+  top: 48px;
+}
+}
+@media (max-width: 1024px) {
+ 
 }
 @media only screen and (max-width: 991px) {
   .container-padding-LR-80 {
